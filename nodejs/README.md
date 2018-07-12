@@ -1,0 +1,3 @@
+## Build  
+$ ./configure  
+$ make  
