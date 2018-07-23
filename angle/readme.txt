@@ -8,3 +8,11 @@ $ build/gyp_angle
 $ ls samples  
 $ make simple_vertex_shader  
 $ out/Debug/simple_vertex_shader  
+
+
+FIXME: miss .git/index
+$ mkdir .git
+$ cd .git
+$ touch index
+
+FIXME: build failed on ubuntu  
