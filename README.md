@@ -19,3 +19,7 @@ https://github.com/peepo/openGL-RPi-tutorial
 
 ## game console   
 https://github.com/JohSchneider/piboy-zero  
+
+## Embeded Linux GUI  
+* 适用于ecos的嵌入式GUI(lwegui)源代码 
+search baidupan csdn.7z  
