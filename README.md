@@ -29,3 +29,7 @@ https://github.com/ZeroPhone/
 
 ## vs1003 drivers  
 https://github.com/RajivBiswas/RaspberryPi-Dev  
+
+## LCD-show  
+3.5寸Raspberry Pi彩屏触摸屏  
+https://github.com/goodtft/LCD-show  
