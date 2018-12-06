@@ -33,3 +33,7 @@ https://github.com/RajivBiswas/RaspberryPi-Dev
 ## LCD-show  
 3.5寸Raspberry Pi彩屏触摸屏  
 https://github.com/goodtft/LCD-show  
+
+## USB HUB  
+* 世友  
+* SSK  
