@@ -37,3 +37,7 @@ https://github.com/goodtft/LCD-show
 ## USB HUB  
 * 世友  
 * SSK  
+
+# 使用qemu虚拟机运行树莓派(linux kernel 4.9)  
+https://blog.csdn.net/talkxin/article/details/79505826  
+
