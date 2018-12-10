@@ -50,3 +50,7 @@ http://www.lcdwiki.com/zh/MHS-3.5inch_RPi_Display
 (baidupan) putty.zip  
 (baidupan) Win32DiskImager.zip    
 
+## 【Bad Apple】树莓派驱动12864OLED屏  
+https://www.bilibili.com/video/av6668646/  
+https://chenxublog.ctfile.com/fs/MkT158467783  
+(baidupan) raspi-badapple.7z  
