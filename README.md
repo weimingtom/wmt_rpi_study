@@ -44,3 +44,9 @@ https://blog.csdn.net/talkxin/article/details/79505826
 ## Book  
 Linux设备驱动开发详解：基于新的Linux 4.0  
 
+## LCDWiki  
+http://www.lcdwiki.com/zh/MHS-3.5inch_RPi_Display  
+(baidupan) Panasonic_SDFormatter.zip  
+(baidupan) putty.zip  
+(baidupan) Win32DiskImager.zip    
+
