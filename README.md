@@ -54,3 +54,11 @@ http://www.lcdwiki.com/zh/MHS-3.5inch_RPi_Display
 https://www.bilibili.com/video/av6668646/  
 https://chenxublog.ctfile.com/fs/MkT158467783  
 (baidupan) raspi-badapple.7z  
+
+## boards  
+https://elinux.org/Main_Page  
+(1) 香橙派：250元左右  
+(2) PocketBeagle: beagleboard出品，250元左右  
+(3) 香蕉派：BPI-M2 Berry，250元左右，BPI-M2 Zero，100元左右  
+(4) CubieBoard：250元-300元左右  
+(5) PINE64、Rock64:150元-250元左右  
