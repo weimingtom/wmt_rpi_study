@@ -63,3 +63,9 @@ https://elinux.org/Main_Page
 (4) CubieBoard：250元-300元左右  
 (5) PINE64、Rock64:150元-250元左右  
 (6) Marsboard：250-350元左右  
+
+## 树莓派wiringPi库详解  
+https://www.cnblogs.com/lulipro/p/5992172.html  
+树莓派-wiringPI-设置引脚编号模式  
+https://blog.csdn.net/nicekwell/article/details/78607695  
+
