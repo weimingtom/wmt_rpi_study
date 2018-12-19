@@ -73,3 +73,6 @@ https://blog.csdn.net/nicekwell/article/details/78607695
 https://github.com/dotsha747/libsdl2-rpifb  
 http://blog.shahada.abubakar.net/post/hardware-accelerated-sdl-2-on-raspberry-pi  
 
+## SDL-1.2.15-raspberrypi  
+https://github.com/vanfanel/SDL-1.2.15-raspberrypi  
+
