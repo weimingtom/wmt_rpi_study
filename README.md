@@ -69,3 +69,7 @@ https://www.cnblogs.com/lulipro/p/5992172.html
 树莓派-wiringPI-设置引脚编号模式  
 https://blog.csdn.net/nicekwell/article/details/78607695  
 
+## libsdl2-rpifb  
+https://github.com/dotsha747/libsdl2-rpifb  
+http://blog.shahada.abubakar.net/post/hardware-accelerated-sdl-2-on-raspberry-pi  
+
