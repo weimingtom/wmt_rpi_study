@@ -76,3 +76,6 @@ http://blog.shahada.abubakar.net/post/hardware-accelerated-sdl-2-on-raspberry-pi
 ## SDL-1.2.15-raspberrypi  
 https://github.com/vanfanel/SDL-1.2.15-raspberrypi  
 
+## awesome-raspberry-pi-zh  
+https://github.com/wwj718/awesome-raspberry-pi-zh  
+
