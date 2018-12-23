@@ -81,4 +81,5 @@ https://github.com/wwj718/awesome-raspberry-pi-zh
 
 ## spi  
 https://www.raspberrypi.org/documentation/hardware/raspberrypi/spi/README.md  
+https://raspberrypi-aa.github.io/session3/spi.html  
 
