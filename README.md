@@ -79,3 +79,6 @@ https://github.com/vanfanel/SDL-1.2.15-raspberrypi
 ## awesome-raspberry-pi-zh  
 https://github.com/wwj718/awesome-raspberry-pi-zh  
 
+## spi  
+https://www.raspberrypi.org/documentation/hardware/raspberrypi/spi/README.md  
+
