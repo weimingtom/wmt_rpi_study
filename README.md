@@ -83,3 +83,6 @@ https://github.com/wwj718/awesome-raspberry-pi-zh
 https://www.raspberrypi.org/documentation/hardware/raspberrypi/spi/README.md  
 https://raspberrypi-aa.github.io/session3/spi.html  
 
+## S5PV210  
+S5PV210  
+
