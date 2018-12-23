@@ -86,3 +86,6 @@ https://raspberrypi-aa.github.io/session3/spi.html
 ## S5PV210  
 S5PV210  
 
+## wiringpi-tft-tool  
+https://github.com/nopnop2002/wiringpi-tft-tool  
+
