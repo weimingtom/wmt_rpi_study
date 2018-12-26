@@ -98,3 +98,4 @@ DSI
 
 ## ARM9  
 s3c2440  
+https://elinux.org/S3C2440  
