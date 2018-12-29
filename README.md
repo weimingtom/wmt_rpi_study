@@ -112,3 +112,12 @@ https://github.com/fundoong/Raspberry-pi-Device-Driver
 https://github.com/Apress/mastering-raspberry-pi  
 https://github.com/ve3wwg/raspberry_pi  
 (baidupan) Mastering_the_Raspberry_Pi.pdf  
+
+## screen pixel count  
+https://tieba.baidu.com/p/1248658772  
+gba: 240 * 160  
+fc: 255 * 224  
+
+## InfoNES  
+(baidupan) InfoNES097JRC1_SDL.tar.gz  
+
