@@ -63,6 +63,7 @@ https://elinux.org/Main_Page
 (4) CubieBoard：250元-300元左右  
 (5) PINE64、Rock64:150元-250元左右  
 (6) Marsboard：250-350元左右  
+(7) ROC-RK3328-CC: FireFly, 250元左右  
 
 ## 树莓派wiringPi库详解  
 https://www.cnblogs.com/lulipro/p/5992172.html  
