@@ -97,9 +97,11 @@ MHS
 HDMI  
 DSI  
 
-## ARM9  
-s3c2440  
+## ARM9, ARM10, ARM11    
+* s3c2440  
 https://elinux.org/S3C2440  
+* 飞凌S3C6410开发板学习板三星ARM11评估板Linux、Android、Wince  
+* 友善之臂嵌入式开发板ARM9 mini2440学习板，送显示屏Linux工控板  
 
 ## Benchmarking Raspberry Pi GPIO Speed  
 http://codeandlife.com/2012/07/03/benchmarking-raspberry-pi-gpio-speed/  
