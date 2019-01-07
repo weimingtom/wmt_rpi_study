@@ -128,3 +128,8 @@ fc: 255 * 224
 ## RGB555toRGB, RGBtoRGB565  
 https://blog.csdn.net/iteye_4515/article/details/81800882  
 https://ssjupiter.iteye.com/blog/890104  
+
+## Nofrendo  
+(baidupan) nofrendo-2.0pre1.zip  
+(baidupan, linux) nofrendo_linux_v1.tar.gz  
+(baidupan, ubuntu) nofrendo_linux_v2_ubuntu.tar.gz  
