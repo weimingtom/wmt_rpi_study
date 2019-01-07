@@ -122,8 +122,8 @@ fc: 255 * 224
 
 ## InfoNES  
 (baidupan) InfoNES097JRC1_SDL.tar.gz  
-(baidupan) InfoNES097JRC1_SDL_v2.rar  
-(baidupan) infones_rpi_v1.rar  
+(baidupan, win) InfoNES097JRC1_SDL_v2.rar  
+(baidupan, rpi) infones_rpi_v1.rar  
 
 ## RGB555toRGB, RGBtoRGB565  
 https://blog.csdn.net/iteye_4515/article/details/81800882  
