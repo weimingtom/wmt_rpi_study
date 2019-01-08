@@ -133,3 +133,12 @@ https://ssjupiter.iteye.com/blog/890104
 (baidupan) nofrendo-2.0pre1.zip  
 (baidupan, linux) nofrendo_linux_v1.tar.gz  
 (baidupan, ubuntu) nofrendo_linux_v2_ubuntu.tar.gz  
+
+## Size  
+https://tieba.baidu.com/p/1248658772  
+fc SFC都是255x224  
+GB 160x144  
+GBA 240x160   
+GBC和GB一样只不过是彩屏  
+GB是四阶灰度的黑白屏  
+
