@@ -155,3 +155,5 @@ http://wiki.friendlyarm.com/wiki/index.php/NanoPi_Duo/zh
 ## Cylon.js  
 https://cylonjs.com  
 
+## linkit-smart-7688  
+https://labs.mediatek.com/zh-cn/platform/linkit-smart-7688  
