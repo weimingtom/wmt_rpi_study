@@ -157,3 +157,9 @@ https://cylonjs.com
 
 ## linkit-smart-7688  
 https://labs.mediatek.com/zh-cn/platform/linkit-smart-7688  
+
+## 7688  
+RALINK_GPIO_BASE  
+0xB0000600  
+https://github.com/aggresss/RFDemo  
+https://github.com/jiangrunwu/linux_driver  
