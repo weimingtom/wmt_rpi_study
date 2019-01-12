@@ -69,6 +69,7 @@ https://elinux.org/Main_Page
 (10) NanoPi Duo2：全志，150元左右  
 (11) LinkIt Smart 7688：联发科，120元左右  
 (12) LinkIt Smart 7688 Duo：联发科，140元左右  
+(13) Widora-BIT5：Widora (歪朵拉), 联发科MT7688, 100元左右  
 
 ## 树莓派wiringPi库详解  
 https://www.cnblogs.com/lulipro/p/5992172.html  
