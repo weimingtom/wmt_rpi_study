@@ -65,6 +65,10 @@ https://elinux.org/Main_Page
 (6) Marsboard：250-350元左右  
 (7) ROC-RK3328-CC: FireFly, 250元左右  
 (8) MTK7688: 120元左右  
+(9) NanoPi Duo：全志，100元左右  
+(10) NanoPi Duo2：全志，150元左右  
+(11) LinkIt Smart 7688：联发科，120元左右  
+(12) LinkIt Smart 7688 Duo：联发科，140元左右  
 
 ## 树莓派wiringPi库详解  
 https://www.cnblogs.com/lulipro/p/5992172.html  
