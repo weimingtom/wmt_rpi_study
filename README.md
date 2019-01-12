@@ -165,6 +165,11 @@ https://github.com/aggresss/RFDemo
 https://github.com/jiangrunwu/linux_driver  
 
 ## mraa  
-http://iotdk.intel.com/docs/master/mraa/  
+http://iotdk.intel.com/docs/master/mraa/
+
+## 路由器就是开发板  
+https://github.com/aggresss/RFDemo  
+https://blog.csdn.net/aggresss/article/details/52753098  
+
 
 
