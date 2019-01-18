@@ -175,4 +175,4 @@ https://blog.csdn.net/aggresss/article/details/52753098
 
 ## 開發新掌機 Handmade01 (黒妹01)  
 https://tieba.baidu.com/p/5293710050?pn=1  
-
+https://steward-fu.github.io/website/handheld/handmade01/design.htm  
