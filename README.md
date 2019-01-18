@@ -140,6 +140,7 @@ https://ssjupiter.iteye.com/blog/890104
 (baidupan) nofrendo-2.0pre1.zip  
 (baidupan, linux) nofrendo_linux_v1.tar.gz  
 (baidupan, ubuntu) nofrendo_linux_v2_ubuntu.tar.gz  
+(baidupan, win32) nofrendo_vc6_v9_min.rar  
 
 ## Size  
 https://tieba.baidu.com/p/1248658772  
