@@ -4,7 +4,7 @@ My Raspberry Pi study
 ## Kernel building   
 https://www.raspberrypi.org/documentation/linux/kernel/building.md  
 
-## Tooltrain  
+## Toolchain  
 * linaro  
 https://www.linaro.org/downloads/  
 https://releases.linaro.org/components/toolchain/binaries/latest-7/arm-linux-gnueabihf/  
