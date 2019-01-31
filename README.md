@@ -188,3 +188,8 @@ https://steward-fu.github.io/website/handheld/handmade01/design.htm
 ## linux-sunxi  
 https://github.com/linux-sunxi/  
 http://linux-sunxi.org/Main_Page  
+
+## ClockworkPi (CPI) / GameShell  
+https://www.clockworkpi.com  
+https://github.com/clockworkpi  
+
