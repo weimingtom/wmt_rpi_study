@@ -195,3 +195,6 @@ https://github.com/clockworkpi
 
 ## fbtft  
 https://github.com/notro/fbtft  
+
+## XtsGamingSystem  
+https://github.com/fgalliat/XtsGamingSystem  
