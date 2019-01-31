@@ -193,3 +193,5 @@ http://linux-sunxi.org/Main_Page
 https://www.clockworkpi.com  
 https://github.com/clockworkpi  
 
+## fbtft  
+https://github.com/notro/fbtft  
