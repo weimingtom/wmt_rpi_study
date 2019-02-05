@@ -168,10 +168,12 @@ https://cylonjs.com
 ## linkit-smart-7688  
 https://labs.mediatek.com/en/support/resources  
 https://labs.mediatek.com/zh-cn/platform/linkit-smart-7688  
+https://github.com/MediaTek-Labs  
 
 ## Onion Omega2 plus    
 https://docs.onion.io/omega2-docs/first-time-setup.html  
 https://onion.io/getstarted/  
+https://github.com/OnionIoT  
 
 ## 7688  
 RALINK_GPIO_BASE  
