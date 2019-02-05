@@ -205,3 +205,15 @@ https://github.com/notro/fbtft
 
 ## XtsGamingSystem  
 https://github.com/fgalliat/XtsGamingSystem  
+
+## NanoPi Duo / Duo2, WiringNP   
+https://github.com/friendlyARM/WiringNP  
+
+## orange pi zero plus2, wiringOP  
+https://github.com/orangepi-xunlong/wiringOP  
+
+## BPI-M2 Zero, 
+https://shop108780008.taobao.com  
+https://www.banana-pi.org.cn  
+http://wiki.banana-pi.org/Getting_Started_with_M2_Zero  
+
