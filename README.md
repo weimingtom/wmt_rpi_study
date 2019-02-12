@@ -219,3 +219,6 @@ http://wiki.banana-pi.org/Getting_Started_with_M2_Zero
 
 ## WR703N  
 https://www.kafan.cn/edu/4809992.html  
+
+## DietPi  
+https://dietpi.com  
