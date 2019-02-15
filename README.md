@@ -212,10 +212,13 @@ https://github.com/friendlyARM/WiringNP
 ## orange pi zero plus2, wiringOP  
 https://github.com/orangepi-xunlong/wiringOP  
 
-## BPI-M2 Zero,  
+## BPI-M2 Zero, BPI-WiringPi2    
 https://shop108780008.taobao.com  
 https://www.banana-pi.org.cn  
 http://wiki.banana-pi.org/Getting_Started_with_M2_Zero  
+https://github.com/BPI-SINOVOIP/BPI-WiringPi2  
+https://github.com/BPI-SINOVOIP/RPi.GPIO  
+https://github.com/BPI-SINOVOIP/BPI-M2Z-bsp  
 
 ## WR703N  
 https://www.kafan.cn/edu/4809992.html  
