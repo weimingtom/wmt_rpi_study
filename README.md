@@ -225,3 +225,7 @@ https://www.kafan.cn/edu/4809992.html
 
 ## DietPi  
 https://dietpi.com  
+
+## imx280a  
+http://www.zlg.cn/ipc/ipc/product/id/91.html  
+https://www.nxp.com/products/processors-and-microcontrollers/arm-based-processors-and-mcus/i.mx-applications-processors:IMX_HOME  
