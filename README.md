@@ -232,3 +232,7 @@ https://www.nxp.com/products/processors-and-microcontrollers/arm-based-processor
 
 ## embedded_project  
 https://github.com/guowenxue/embedded_project  
+
+## Linaro公司基于GCC推出的的ARM交叉编译工具  
+https://blog.csdn.net/ztguang/article/details/51016325  
+
