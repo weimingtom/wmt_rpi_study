@@ -244,3 +244,6 @@ https://blog.csdn.net/ztguang/article/details/51016325
 * GNU/Linux嵌入式快速编程  
 * https://github.com/giometti/gnu_linux_rapid_embedded_programming  
 
+## yoctoproject  
+https://www.yoctoproject.org  
+
