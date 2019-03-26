@@ -245,5 +245,7 @@ https://blog.csdn.net/ztguang/article/details/51016325
 * https://github.com/giometti/gnu_linux_rapid_embedded_programming  
 
 ## yoctoproject  
-https://www.yoctoproject.org  
+* https://www.yoctoproject.org  
+* https://www.cnblogs.com/fah936861121/articles/6797064.html  
+
 
