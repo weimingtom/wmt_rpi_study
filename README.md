@@ -239,3 +239,5 @@ https://blog.csdn.net/ztguang/article/details/51016325
 ## Android  
 * https://www.makeuseof.com/tag/install-android-raspberry-pi/  
 * https://github.com/android-rpi/device_brcm_rpi3/tree/nougat-tablet  
+
+## GNU/Linux嵌入式快速编程  
