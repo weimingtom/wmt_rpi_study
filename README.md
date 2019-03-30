@@ -248,4 +248,6 @@ https://blog.csdn.net/ztguang/article/details/51016325
 * https://www.yoctoproject.org  
 * https://www.cnblogs.com/fah936861121/articles/6797064.html  
 
+## 1.5" ILI9163 lcd screen working  
+https://www.raspberrypi.org/forums/viewtopic.php?p=446411#p446411  
 
