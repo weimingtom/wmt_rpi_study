@@ -253,3 +253,7 @@ https://www.raspberrypi.org/forums/viewtopic.php?p=446411#p446411
 
 ## 生命不息 折腾不止  
 http://nicekwell.net  
+
+## 用RaspberryPi 3B 驱动LCD1602(八位总线）液晶显示屏（使用iwringPi库，C语言编写）  
+https://blog.csdn.net/wa779478028/article/details/84498017  
+digitalWriteByte  
