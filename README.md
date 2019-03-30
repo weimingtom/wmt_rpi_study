@@ -257,3 +257,7 @@ http://nicekwell.net
 ## 用RaspberryPi 3B 驱动LCD1602(八位总线）液晶显示屏（使用iwringPi库，C语言编写）  
 https://blog.csdn.net/wa779478028/article/details/84498017  
 digitalWriteByte  
+
+## 树莓派wiringPi库使用说明  
+http://www.wnavy.com/archives/584  
+
