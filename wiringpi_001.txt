@@ -1,0 +1,92 @@
+From http://www.wnavy.com/archives/584  
+
+树莓派GPIO对照表
+
+注：本表格适用于树莓派B+、树莓派2B、树莓派A+，并且兼容树莓派B，树莓派B为26Pin，其引脚对应于上表的前26Pin。
+必要的说明
+在使用wiringPi库之前，你需要包含头文件：#include <wiringPi.h>
+依赖你正在使用的系统环境你需要增加 -I/usr/local/include -L/usr/local/lib -lwiringPi 
+在使用命令行的时候编译你的程序，最重要的是-lwiringPi。
+ 
+设置函数（Setup Functions）
+这里有3中方式来初始化wiringPi。
+int wiringPiSetup (void) ;
+int wiringPiSetupGpio (void) ;
+int wiringPiSetupSys (void) ;
+在你程序开始的时候必须调用其中一个设置函数，如果返回-1则初始化GPIO失败，然后你应该查阅全局错误代码去看为什么会失败。
+下面是几个设置函数的区别：
+wiringPiSetup(void) ;
+这个设置函数初始化wiringPi系统，假定当前程序将要使用wiringPi引脚编号方案，这是一个简单的编号方案，它提供了将虚拟引脚编号0~16映射到实际的Broadcom GPIO引脚编号。查看pins page图表来了解wiringPi引脚编号、Broadcom GPIO引脚编号和树莓派板子的边缘连接器物理位置的映射情况。
+这个函数需要root权限才能调用。
+wiringPiSetupGpio(void) ;
+这个函数与上面那个函数相同，然而它允许当前程序不重新映射直接地使用Broadcom GPIO引脚编号。
+和上面一样，这个函数也需要root权限才能调用。
+wiringPiSetupSys(void)
+这个函数初始化wiringPi系统，但是它用的是/sys/class/gpio接口而不是直接的访问硬件。它可以被非root用户调用，提供的GPIO引脚必须在事先使用gpio命令导出。在这种模式下的引脚编号是原生的Broadcom GPIO引脚编号。
+注意：在这种模式下你仅仅能够使用通过/sys/class/gpio接口导出的引脚。在你调用你的程序之前你必须导出这些引脚。你可以通过一个单独的shell脚本来做这件事，或者在你的程序中使用system()函数。
+还需要注意的是一些函数(下面列出的)在使用这种模式的时候是无效的，它们可能不能在非root权限的情况下进行操作。
+ 
+一般wiring函数（General wiring functions）
+void pinMode (int pin, int mode) ;
+这个函数设置引脚的模式为INPUT、OUTPUT或者PWM_OUTPUT.注意仅仅wiringPi引脚1（BCM_GPIO 18）支持PWM输出，引脚的编号可以从pins table中获得。这个函数在系统模式（ Sys mode）下无效。
+void digitalWrite (int pin, int value) ;
+向给出的引脚写HIGH或者LOW（1 or 0）值，并确保该引脚在之前已经被设置成输出模式。
+void digitalWriteByte (int value) ;
+这个函数写8位字节到8个GPIO引脚，最快的方式是马上设置所有8位字节成一个特定的值，尽管它仍然需要对GPIO硬件进行了两次写操作。
+void pwmWrite (int pin, int value) ;
+向给出引脚的PWM寄存器写value值，value的值必须在0~1024之间。(再次注意，仅仅pin1(BCM_GPIO18)支持PWM)。这个函数在系统模式（ Sys mode）下无效。
+int digitalRead (int pin) ;
+这个函数返回读取pin引脚所获得的值，这个值将会是HIGH或者LOW（1 or 0）取决于改pin的逻辑电平。
+void pullUpDnControl (int pin, int pud) ;
+这个函数将给出的引脚设置成上拉或者下拉电阻模式，引脚必须设置成输入模式。和Arduino不同，BCM2835同时有用上拉和下拉内部电阻器。pud参数应该是;PUD_OFF(没有上拉或下拉),PUD_DOWN（下拉）,PUD_UP（上拉到3.3V）。
+这个函数在Sys模式下无效，如果你需要启动一个上拉或者下拉，你可以在你开始运行程序前在一个脚本中使用gpio命令来完成。
+ 
+PWM控制（PWM Control）
+当系统运行在Sys模式下的时候PWM不能被控制。
+pwmSetMode (int mode) ;
+PWM发生器可以以两种模式工作-“平稳模式”和”mark:space”。mark:space模式时传统的，然而PI的默认模式时平稳模式。你可以通过提供 PWM_MODE_BAL 或者 PWM_MODE_MS 参数来切换模式。
+pwmSetRange (unsigned int range) ;
+这个函数设置了PWM发生器的寄存器的范围，默认是1024。
+pwmSetClock (int divisor) ;
+这个函数用于设置PWM时钟的分频数。
+你需要阅读Broadcom ARM 外设数据手册来了解更多关于PWM系统的信息。
+ 
+ 
+定时函数（Timing functions）
+unsigned int millis (void)
+这个函数返回一个数据，这个数据代表了从你的程序调用wiringPiSetup函数开始到当前所经历的毫秒数，它返回一个32位无符号数which wraps after 49 days。
+void delay (unsigned int howLong)
+这个函数会导致程序执行暂停至少howLong毫秒，由于linux多任务的特性可能会更长。注意最大的延时时间是一个32位无符号整数或者大约为49天。
+void delayMicroseconds (unsigned int howLong)
+这个函数会导致程序执行暂停至少howLong微秒，由于linux多任务的特性可能会更长。注意最大的延时时间是一个32位无符号整数微秒或者大约为71分钟。
+ 
+程序/线程优先级（Program/Thread Priority）
+int piHiPri (int priority) ;
+中断（Interrupts）
+拥有一个更新了GPIO中断处理代码补丁的内核（也就是在2012年7月以后的内核），你现在就可以在你的程序中等待中断的发生。这个功能在你等待中断发生的时候释放处理器去做其它任务。GPIO口可以产生的中断输入信号有上升沿、下降沿或者两者都有。
+注意：2013年1月：waitForInterrupt()函数已经被弃用了，你应该使用下面这个更新更简单的wiringPiISR() 函数。
+int waitForInterrupt (int pin, int timeOut) ;
+当被调用的时候，你的程序会被挂起来等待该引脚有中断事件的发生。 timeOut 参数给入的是毫秒值，或者可以设置成-1当需要永久的等待的时候。返回值是-1意味着发生了错误（errno会相应的被设置），是0如果超时，是1代表了成功检测到了的一个中断事件。在调用waitForInterrupt之前，你首先必须初始化GPIO引脚，目前唯一能够做这件事的方式是使用gpio命令，也可以在一个脚本中，或者在你的程序中使用system()。举例来说我们想要在GPIO引脚0上等待一个下降沿中断，因此要设置硬件，在运行程序之前我们需要运行：
+gpio edge 0 falling
+int wiringPiISR (int pin, int edgeType,  void (*function)(void)) ;
+这个函数在特殊的引脚上注册一个函数来接收中断，edgeType参数是INT_EDGE_FALLING、INT_EDGE_RISING,INT_EDGE_BOTH or INT_EDGE_SETUP中的一个。如果它是INT_EDGE_SETUP，则不会有初始化引脚的操作发生-它假定你已经在别处设置了引（例如 使用gpio命令），但是如果你指定了其它类型中的一种，然后这个引脚就会按照规定被导出和初始化。它通过合适的调用gpio通用命令来实现，因此它应该被使用。
+ 
+引脚编号由当前的模式提供-native wiringPi, BCM_GPIO or Sys 模式。
+这个函数（wiringPiISR ）可以在任何模式下工作，没必要获取root权限来工作。当中断触发的时候function函数就会被调用，当它已经被触发了，在调用function函数之前它会在调度程序中被清除，因此如果在你处理完成（这次中断）之前一个后续的中断发生，然后它（后续的中断）不会被丢失。（不管怎样，它仅仅能够监测再多一个中断，它们（中断）会被忽略如果在一个中断正在被处理的时候又有不只一个中断发生）。这个函数可以在高优先级别下运行（如果程序使用sudo运行或者在root权限下），与主程序同时执行。它能够完全访问所有的全局变量，打开文件句柄等等。通过查看 isr.c例程来了解更多详细的内容和怎么去使用这些特性。
+ 
+并行处理（Concurrent Processing (multi-threading)）
+int piThreadCreate (name) ;
+piLock (int keyNum) ;
+piUnlock (int keyNum) ;
+混杂函数(Misc. Functions)
+piBoardRev (void) ;
+wpiPinToGpio (int wPiPin) ;
+setPadDrive (int group, int value) ;
+
+另见：
+树莓派学习笔记——wiringPi简介、安装和管脚说明
+http://blog.csdn.net/xukai871105/article/details/17737005  
+树莓派学习笔记——wiringPi GPIO使用详解
+http://blog.csdn.net/xukai871105/article/details/17881433  
+
+    
