@@ -260,4 +260,7 @@ digitalWriteByte
 
 ## 树莓派wiringPi库使用说明  
 http://www.wnavy.com/archives/584  
+https://blog.csdn.net/xukai871105/article/details/17737005  
+https://blog.csdn.net/xukai871105/article/details/17881433  
+
 
