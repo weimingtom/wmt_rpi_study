@@ -263,3 +263,13 @@ http://www.wnavy.com/archives/584
 https://blog.csdn.net/a656343072/article/details/41209857  
 https://blog.csdn.net/xukai871105/article/details/17737005  
 https://blog.csdn.net/xukai871105/article/details/17881433  
+
+## KeDei  
+https://github.com/lzto/RaspberryPi_KeDei_35_lcd_v62  
+
+## st7735fb  
+https://github.com/rm-hull/st7735fb  
+
+## ili9341  
+???  
+
