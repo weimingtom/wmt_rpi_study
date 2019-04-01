@@ -276,3 +276,6 @@ https://github.com/rm-hull/st7735fb
 ## RPI-TFTLIBS  
 https://github.com/Nand-e/RPI-TFTLIBS  
 
+## 树莓派CM3 掌上游戏机DIY全记录  
+https://www.quwj.com/2018/04/14/retro-cm3-a-powerful-retropie-handled-game-console.html  
+
