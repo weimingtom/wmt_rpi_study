@@ -286,3 +286,7 @@ https://github.com/swkim01/waveshare-dtoverlays/blob/master/waveshare35a.dts
 tft35a-overlay.dtb  
 https://github.com/goodtft/LCD-show/blob/master/usr/tft35a-overlay.dtb  
 https://github.com/waveshare/LCD-show/blob/master/waveshare35a-overlay.dtb  
+$ sudo apt-get install device-tree-compiler  
+$ dtc -O dts -o tft35a.dts -I dtb tft35a-overlay.dtb  
+$ dtc -O dts -o waveshare35a.dts -I dtb waveshare35a-overlay.dtb  
+
