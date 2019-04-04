@@ -280,6 +280,8 @@ https://github.com/Nand-e/RPI-TFTLIBS
 https://www.quwj.com/2018/04/14/retro-cm3-a-powerful-retropie-handled-game-console.html  
 
 ## search tft35a_pins  
+ilitek, ili9486  
 https://github.com/willprice/willprice.github.com/blob/master/_posts/2017-09-16-adventures-with-tft-screens-for-raspberry-pi.md  
-https://github.com/swkim01/waveshare-dtoverlays  
-
+https://github.com/swkim01/waveshare-dtoverlays/blob/master/waveshare35a.dts  
+tft35a-overlay.dtb  
+https://github.com/goodtft/LCD-show/blob/master/usr/tft35a-overlay.dtb  
