@@ -285,3 +285,4 @@ https://github.com/willprice/willprice.github.com/blob/master/_posts/2017-09-16-
 https://github.com/swkim01/waveshare-dtoverlays/blob/master/waveshare35a.dts  
 tft35a-overlay.dtb  
 https://github.com/goodtft/LCD-show/blob/master/usr/tft35a-overlay.dtb  
+https://github.com/waveshare/LCD-show/blob/master/waveshare35a-overlay.dtb  
