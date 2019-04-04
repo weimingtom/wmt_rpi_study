@@ -281,4 +281,5 @@ https://www.quwj.com/2018/04/14/retro-cm3-a-powerful-retropie-handled-game-conso
 
 ## search tft35a_pins  
 https://github.com/willprice/willprice.github.com/blob/master/_posts/2017-09-16-adventures-with-tft-screens-for-raspberry-pi.md  
+https://github.com/swkim01/waveshare-dtoverlays  
 
