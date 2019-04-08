@@ -293,3 +293,6 @@ $ dtc -O dts -o waveshare35a.dts -I dtb waveshare35a-overlay.dtb
 ## 74HC595, ILI9481 (???)  
 https://github.com/ioxhop/Adafruit-ILI9481-ESP32-SPI  
 
+## vs10xx linux drivers  
+https://github.com/rvp-nl/vs10xx-linux  
+
