@@ -290,3 +290,6 @@ $ sudo apt-get install device-tree-compiler
 $ dtc -O dts -o tft35a.dts -I dtb tft35a-overlay.dtb  
 $ dtc -O dts -o waveshare35a.dts -I dtb waveshare35a-overlay.dtb  
 
+## 74HC595, ILI9481 (???)  
+https://github.com/ioxhop/Adafruit-ILI9481-ESP32-SPI  
+
