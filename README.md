@@ -296,3 +296,9 @@ https://github.com/ioxhop/Adafruit-ILI9481-ESP32-SPI
 ## vs10xx linux drivers  
 https://github.com/rvp-nl/vs10xx-linux  
 
+## LCD  
+* 友达屏，群创屏，群创兼容屏，分别针对各种型号的主板  
+https://tieba.baidu.com/p/6090881402  
+
+* WX150, WX300  
+https://tieba.baidu.com/p/6092629172  
