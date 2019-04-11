@@ -4,6 +4,8 @@ My Raspberry Pi study
 ## 订阅号  
 树莓派创客营  
 https://mp.weixin.qq.com/s/g5aNe2sBoxuWhSPd_QjCyw  
+(baidupan) 2018-04-18-raspbian-stretch-lite.zip  
+(baidupan) 2018-11-13-raspbian-stretch-lite.zip  
 
 ## Kernel building   
 https://www.raspberrypi.org/documentation/linux/kernel/building.md  
