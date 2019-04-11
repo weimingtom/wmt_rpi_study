@@ -302,3 +302,7 @@ https://tieba.baidu.com/p/6090881402
 
 * WX150, WX300  
 https://tieba.baidu.com/p/6092629172  
+
+## arcade  
+https://arcade.makecode.com  
+https://learn.adafruit.com/makecode-arcade-with-raspberry-pi-zero  
