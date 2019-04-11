@@ -1,6 +1,10 @@
 # wmt_rpi_study
 My Raspberry Pi study
 
+## 订阅号  
+树莓派创客营  
+https://mp.weixin.qq.com/s/g5aNe2sBoxuWhSPd_QjCyw  
+
 ## Kernel building   
 https://www.raspberrypi.org/documentation/linux/kernel/building.md  
 
