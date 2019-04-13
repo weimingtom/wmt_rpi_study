@@ -312,3 +312,6 @@ https://tieba.baidu.com/p/6092629172
 ## arcade  
 https://arcade.makecode.com  
 https://learn.adafruit.com/makecode-arcade-with-raspberry-pi-zero  
+
+## sdl for android  
+https://github.com/weimingtom/eriri/blob/master/rubysdl/jni/sdl/src/video/android/SDL_androidvideo.c  
