@@ -315,3 +315,8 @@ https://learn.adafruit.com/makecode-arcade-with-raspberry-pi-zero
 
 ## sdl for android  
 https://github.com/weimingtom/eriri/blob/master/rubysdl/jni/sdl/src/video/android/SDL_androidvideo.c  
+
+## retrozero  
+https://facelesstech.wordpress.com/2019/04/07/retrozero-retropie-handheld/  
+https://github.com/facelessloser/retro_zero_handheld  
+https://github.com/facelessloser/ST7789_1.3_screen  
