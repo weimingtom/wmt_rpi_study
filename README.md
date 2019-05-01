@@ -1,6 +1,9 @@
 # wmt_rpi_study
 My Raspberry Pi study
 
+## rpi3b test   
+2018-04-18-raspbian-stretch.img  
+
 ## 订阅号  
 树莓派创客营  
 https://mp.weixin.qq.com/s/g5aNe2sBoxuWhSPd_QjCyw  
