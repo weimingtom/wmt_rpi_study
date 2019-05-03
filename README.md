@@ -323,3 +323,7 @@ https://github.com/weimingtom/eriri/blob/master/rubysdl/jni/sdl/src/video/androi
 https://facelesstech.wordpress.com/2019/04/07/retrozero-retropie-handheld/  
 https://github.com/facelessloser/retro_zero_handheld  
 https://github.com/facelessloser/ST7789_1.3_screen  
+
+## Step01 – Bare Metal Programming in C Pt1  
+http://www.valvers.com/open-software/raspberry-pi/step01-bare-metal-programming-in-cpt1/  
+
