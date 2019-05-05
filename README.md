@@ -10,6 +10,9 @@ https://mp.weixin.qq.com/s/g5aNe2sBoxuWhSPd_QjCyw
 (baidupan) 2018-04-18-raspbian-stretch-lite.zip  
 (baidupan) 2018-11-13-raspbian-stretch-lite.zip  
 
+## 树莓派开发板超市  
+http://www.shumeipai.net/portal.php  
+
 ## Kernel building   
 https://www.raspberrypi.org/documentation/linux/kernel/building.md  
 
