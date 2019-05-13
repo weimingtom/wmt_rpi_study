@@ -330,3 +330,8 @@ https://github.com/facelessloser/ST7789_1.3_screen
 ## Step01 – Bare Metal Programming in C Pt1  
 http://www.valvers.com/open-software/raspberry-pi/step01-bare-metal-programming-in-cpt1/  
 
+## Buildroot  
+https://buildroot.org  
+https://cellux.github.io/articles/diy-linux-with-buildroot-part-1/  
+https://github.com/cellux/rpi-buildroot  
+https://git.busybox.net/buildroot/tree/board/raspberrypi  
