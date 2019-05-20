@@ -335,3 +335,6 @@ https://buildroot.org
 https://cellux.github.io/articles/diy-linux-with-buildroot-part-1/  
 https://github.com/cellux/rpi-buildroot  
 https://git.busybox.net/buildroot/tree/board/raspberrypi  
+
+## rpi_gpio_driver  
+https://github.com/bogics/rpi_gpio_driver  
