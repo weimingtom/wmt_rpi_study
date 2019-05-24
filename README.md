@@ -338,3 +338,10 @@ https://git.busybox.net/buildroot/tree/board/raspberrypi
 
 ## rpi_gpio_driver  
 https://github.com/bogics/rpi_gpio_driver  
+
+## allwinner camdroid  
+https://github.com/gitlicheng/camdroid  
+
+## omega2 u-boot  
+https://github.com/sysadminmike/freebsd-onion-omega2-build  
+https://github.com/dwelch67/onion_omega2_samples  
