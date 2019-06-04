@@ -2,7 +2,8 @@
 My Raspberry Pi study
 
 ## rpi3b test   
-2018-04-18-raspbian-stretch.img  
+(baidupan) 2018-04-18-raspbian-stretch.zip    
+(baidupan) 2018-04-18-raspbian-stretch-lite.zip  
 
 ## 订阅号  
 树莓派创客营  
