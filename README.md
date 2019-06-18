@@ -346,3 +346,10 @@ https://github.com/gitlicheng/camdroid
 ## omega2 u-boot  
 https://github.com/sysadminmike/freebsd-onion-omega2-build  
 https://github.com/dwelch67/onion_omega2_samples  
+
+## RazDroid
+Android for the Raspberry Pi  
+https://sourceforge.net/projects/razdroid/  
+https://github.com/Razdroid  
+
+## 《开源硬件创客:15个酷应用玩转树莓派》  
