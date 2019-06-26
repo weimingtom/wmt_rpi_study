@@ -5,6 +5,15 @@ My Raspberry Pi study
 (baidupan) 2018-04-18-raspbian-stretch.zip    
 (baidupan) 2018-04-18-raspbian-stretch-lite.zip  
 
+## rpi zero serial login  
+(1) 接好右上第3，第4，第5针  
+GND<->GND  
+TXD0<->RX  
+RXD0<->TX  
+**电源用usb供电，不要用转换器的5V供电**  
+(2) Win32DiskImager烧录2018-11-13-raspbian-stretch-lite.zip, 不要使用2018-04-18-raspbian-stretch-lite.zip  
+(3) 修改config.txt，增加enable_uart=1（不需要添加ssh空文件）  
+
 ## 订阅号  
 树莓派创客营  
 https://mp.weixin.qq.com/s/g5aNe2sBoxuWhSPd_QjCyw  
