@@ -362,3 +362,6 @@ https://sourceforge.net/projects/razdroid/
 https://github.com/Razdroid  
 
 ## 《开源硬件创客:15个酷应用玩转树莓派》  
+
+## buildroot  
+* https://blog.csdn.net/apiculate/article/details/79257789  
