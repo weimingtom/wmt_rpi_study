@@ -365,3 +365,8 @@ https://github.com/Razdroid
 
 ## buildroot  
 * https://blog.csdn.net/apiculate/article/details/79257789  
+
+## Raspberry Pi树莓派实作应用  
+https://www.ptpress.com.cn/shopping/buy?bookId=0fc6355e-5915-473e-9479-b63ca6f15f33
+gentoo
+https://gentoo.org  
