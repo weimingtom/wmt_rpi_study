@@ -371,3 +371,5 @@ https://www.ptpress.com.cn/shopping/buy?bookId=0fc6355e-5915-473e-9479-b63ca6f15
 gentoo  
 https://gentoo.org  
 
+## 手把手教你做树莓派语音识别，文本变语音
+http://www.jackxiang.com/post/7637/  
