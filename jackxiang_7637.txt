@@ -1,0 +1,240 @@
+手把手教你做树莓派语音识别，文本变语音。 不指定
+jackxiang 2014-11-21 10:42   大 | 中 | 小  
+WEB2.0 评论(2)
+背景：想做智能硬件，语音识别成文字，再解析做相关操作是一个重要的点功能，国内就没有一个厂商像google一样提供一个web的协议进行翻译么？能不能更开放点，把这点能力给开放出来，毕竟如果哪家小公司去做这一块成本相当的高，有讯飞一家，还有没有更勇于开放的呢？呵呵,;webchat，只能在微信里用。
+
+
+前一段写了一个语音识别的帖子， 当时还不成熟
+现在比以前懂得多了一些， 跟大家来分享
+
+所需设备： 带麦克风的usb摄像头，树莓派一个，互联网
+首先安装软件
+apt-get install arecord ffmpeg omxplayer
+语音识别大致分成3各部分，
+
+第一步录音
+arecord -D "plughw:1,0" -d 5 file.wav
+解释一下 -D这个参数的意思就选择设备， 外部设备就是plughw:1,0  内部设备就是plughw:0,0， 树莓派本身并没有录音模块，故没有内部设备。 -d 5 的意思就是录制时间为5秒， 如果不加这个参数就是一直录音直到ctrol+C停止， 最后生成的文件名字叫做file.wav
+检验方式， 我们戴上耳机听一下我们录制的声音 omxplayer -o local file.wav
+解释omxplayer是播放器， 无图形界面
+-o 是选择从哪里播放，是通过hdmi输出， 还是本地的耳机口放出来， 我们插得是树莓派自带的耳机口， 故选择local
+最后是跟上声音文件， 就能听到我们的录音了
+
+第二步 转换格式
+我们打算上传到google做翻译， google只认flac格式， 所以我们要做转化， 把wav转换为flac格式
+ffmpeg -i file.wav -ar 16000 -acodec flac file.flac
+解释一下：-i 是指定输入的语音文件 -ar是指定波特率 为16000 -acodec是指定输出格式为flac, 最后接上输出文件的文件名即可， 当然是以flac为后缀的文件名， 最好是 file.flac
+检验方式， 我们戴上耳机听一下我们录制的声音 omxplayer -o local file.flac
+同样我们可以再次听到我们录制好的转过格式的声音文件
+
+第三步上传网站获取翻译
+wget -q -U "Mozilla/5.0" --post-file file.flac --header "Content-Type: audio/x-flac; rate=16000" -O - "[color=blue !important]http://www.google.com/speech-api/v1/recognize?lang=zh-cn&client=chromium"
+对于这句简单的解释下
+wget命令上传file.flac文件到google,并下载回对应的解释文件， 这个是中文的语音识别，如果是英文的语音识别改成en-us即可
+
+最后预祝大家语音翻译玩的愉快
+
+—————————————————————————google被墙，看下国内的—————————————————————————————
+树莓派之会说话的机器人-科大讯飞语音SDK ：
+本人一直想做一种可以和人对话的智能机器人，这样小孩子一定会非常的喜欢，树莓派的小巧和可任意扩展的Linux系统可以满足这种需求。
+首先是让梅莓派说话，也就是把一段文本转换成语音，然后再进行播放。方案有很多，也有很多的开源软件，考虑到之后还要做语音识别方面的功能，最终选择科大讯飞的语音SDK,虽然官方未公开提供树莓派版本的SDK,但通过咨询公司开发人员了，他们内部已经有了一个基于树莓派的Beta版本，然后就发给了我，顺便我也可以帮助进行测试，这里再次对科大讯飞表示感谢。
+讯飞官方提供了一个基本的测试代码，我在基础上做了一些修改，功能是：输入一段文本，指定发音人（普通话，粤语，儿童。。。），保存为.wav文件
+程序命令行是:    ./tts [text] [wave filename] [voice name]
+            示例：   ./tts 你好 hello.wav xiaoyu
+好了，上代码:
+// ttsdemo.cpp : Defines the entry point for the console application.
+//
+#include 
+#include 
+#include 
+#include 
+#include "qtts.h"
+#define TRUE 1
+#define FALSE 0
+typedef int SR_DWORD;
+typedef short int SR_WORD ;
+//音频头部格式
+struct wave_pcm_hdr
+{
+        char            riff[4];                        // = "RIFF"
+        SR_DWORD        size_8;                         // = FileSize - 8
+        char            wave[4];                        // = "WAVE"
+        char            fmt[4];                         // = "fmt "
+        SR_DWORD        dwFmtSize;                      // = 下一个结构体的大小 : 16
+        SR_WORD         format_tag;              // = PCM : 1
+        SR_WORD         channels;                       // = 通道数 : 1
+        SR_DWORD        samples_per_sec;        // = 采样率 : 8000 | 6000 | 11025 | 16000
+        SR_DWORD        avg_bytes_per_sec;      // = 每秒字节数 : dwSamplesPerSec * wBitsPerSample / 8
+        SR_WORD         block_align;            // = 每采样点字节数 : wBitsPerSample / 8
+        SR_WORD         bits_per_sample;          // = 量化比特数: 8 | 16
+        char            data[4];                        // = "data";
+        SR_DWORD        data_size;                // = 纯数据长度 : FileSize - 44 
+} ;
+//默认音频头部数据
+struct wave_pcm_hdr default_pcmwavhdr = 
+{
+        { 'R', 'I', 'F', 'F' },
+        0,
+        {'W', 'A', 'V', 'E'},
+        {'f', 'm', 't', ' '},
+        16,
+        1,
+        1,
+        16000,
+        32000,
+        2,
+        16,
+        {'d', 'a', 't', 'a'},
+        0  
+};
+int text_to_speech(const char* src_text ,const char* des_path ,const char* params)
+{
+        struct wave_pcm_hdr pcmwavhdr = default_pcmwavhdr;
+        const char* sess_id = NULL;
+        int ret = 0;
+        unsigned int text_len = 0;
+        char* audio_data;
+        unsigned int audio_len = 0;
+        int synth_status = MSP_TTS_FLAG_STILL_HAVE_DATA;
+        FILE* fp = NULL;
+//        printf("begin to synth...\n");
+        if (NULL == src_text || NULL == des_path)
+        {
+//                printf("params is null!\n");
+                return -1;
+        }
+        text_len = (unsigned int)strlen(src_text);
+        fp = fopen(des_path,"wb");
+        if (NULL == fp)
+        {
+//                printf("open file %s error\n",des_path);
+                return -1;
+        }
+        sess_id = QTTSSessionBegin(params, &ret);
+        if ( ret != MSP_SUCCESS )
+        {
+//                printf("QTTSSessionBegin: qtts begin session failed Error code %d.\n",ret);
+                return ret;
+        }
+        ret = QTTSTextPut(sess_id, src_text, text_len, NULL );
+        if ( ret != MSP_SUCCESS )
+        {
+//                printf("QTTSTextPut: qtts put text failed Error code %d.\n",ret);
+                QTTSSessionEnd(sess_id, "TextPutError");
+                return ret;
+        }
+        fwrite(&pcmwavhdr, 1, sizeof(pcmwavhdr), fp);
+        while ( true )
+        {
+                audio_data = (char*)QTTSAudioGet( sess_id ,&audio_len , &synth_status , &ret );
+                if ( ret != MSP_SUCCESS )
+                {
+//                        printf("QTTSAudioGet: qtts get audio failed Error code %d.\n",ret);
+                        break;
+                }
+                fwrite(audio_data, 1, audio_len, fp);
+                pcmwavhdr.data_size += audio_len;//修正pcm数据的大小
+                if ( MSP_TTS_FLAG_DATA_END == synth_status )
+                {
+//                        printf("QTTSAudioGet: get end of data.\n");
+                        break;
+                }
+        }
+        //修正pcm文件头数据的大小
+        pcmwavhdr.size_8 += pcmwavhdr.data_size + 36;
+        //将修正过的数据写回文件头部
+        fseek(fp, 4, 0);
+        fwrite(&pcmwavhdr.size_8,sizeof(pcmwavhdr.size_8), 1, fp);
+        fseek(fp, 40, 0);
+        fwrite(&pcmwavhdr.data_size,sizeof(pcmwavhdr.data_size), 1, fp);
+        fclose(fp);
+        ret = QTTSSessionEnd(sess_id, "Normal");
+        if ( ret != MSP_SUCCESS )
+        {
+//                printf("QTTSSessionEnd: qtts end failed Error code %d.\n",ret);
+        }
+        return ret;
+}
+int main(int argc, char* argv[])
+{
+        ///APPID请勿随意改动
+        const char* m_configs    = "appid=xxxxxx"; // 你的appid
+        const char* text         = "你好";
+        const char* filename     = "tts.wav";
+        const char* voice_name   = "xiaoyan";
+        const char* param_format = "ssm=1,auf=audio/L16;rate=16000,vcn=%s,tte=UTF8";
+        char param[128];
+        int ret = 0;
+        if((argc == 2) && ((strcmp(argv[1], "--help") == 0) || (strcmp(argv[1], "-h") == 0)))
+        {
+                printf("USAGE:   ./tts [text你好)] [wave filenametts.wav)] [voice namexiaoyan)] \n");
+                printf("Example: ./tts 你好 hello.wav xiaoyu\n");
+                printf("\n");
+                return 1;
+        }
+        if(argc >= 2)
+        {
+                text = argv[1];
+        }
+        if(argc >= 3)
+        {
+                filename = argv[2];
+        }
+        if(argc >= 4)
+        {
+                voice_name = argv[3];
+        }
+        memset(param, 0, sizeof(param));
+        sprintf(param, param_format, voice_name);
+        //引擎初始化
+        ret = QTTSInit(m_configs);
+        if ( ret != MSP_SUCCESS )
+        {
+//                printf("QTTSInit: failed, Error code %d.\n", ret);
+                return ret;
+        }
+        //合成文本
+        ret = text_to_speech(text, filename, param);
+        if ( ret != MSP_SUCCESS )
+        {
+                printf("tts : failed.\n");
+        }
+        else
+        {
+                printf("tts : ok.\n");
+        }
+        //引擎关闭
+        QTTSFini();
+        return ret;
+}
+
+
+编译命令行：
+g++ -D_DEBUG -D_GNU_SOURCE -w -pthread -pipe -ldl -lrt -Iinclude -fPIC -o tts tts.cpp msc.a
+这里要先说明一下，讯飞SDK要先从官方获得，并且申请你的appid.
+将文本转换成语音的程序就完成了，下面就是如何让树莓派播放这个.wav文件。
+大家都知道 树莓派声音有两种输出模式： HDMI和Analog模拟，因为我接了一个小音箱给树莓派，所以要选择Analog输出，这里就需要做一些配置:安装声卡服务:
+sudo apt-get install alsa-utils
+加载驱动:
+sudo modprobe snd_bcm2835
+设置Analog输出模式:
+sudo amixer cset numid=3 1
+插上小音箱，然后进行测试（aplay是音频播放的程序，如果缺省没有就使用apt-get instal安装吧）:
+sudo aplay test.wav
+正常情况下音箱发出声音了。
+最后把两个命令连接在一起，接收一段文本然后立马播放(主要是通过外部的程序发送命令，比如HTTP GET/POST, SSH, ...)：
+sudo ./tts  "说话的文本" tmp.wav vinn && aplay tmp.wav
+本文完，欢迎讨论。
+DownLoad: http://www.52pi.net/forum.php?mod=attachment&aid=ODYxfGI0M2FiNTIwfDE0MTY1MzgyODB8MHw2Njg%3D
+
+http://www.52pi.net/portal.php?mod=view&aid=12
+
+科大讯飞：http://www.xue5.com/Mobile/Mobile/604186.html
+文字变语音：
+http://shumeipai.nxez.com/2013/10/05/three-methods-developed-in-text-to-voice-services.html?variant=zh-cn
+Flash 实现 的：http://bbs.9ria.com/thread-175431-1-1.html
+webchat来自：
+http://blog.social-touch.com/2014/06/%E7%8E%A9%E8%BD%AC%E5%BE%AE%E4%BF%A1%E8%90%A5%E9%94%80%EF%BC%9A%E8%AF%A6%E8%A7%A3%E8%AF%AD%E9%9F%B3%E8%AF%86%E5%88%AB%E6%8E%A5%E5%8F%A3%E3%80%81oauth2-0%E7%BD%91%E9%A1%B5%E6%8E%A5%E5%8F%A3/
+作者：jackxiang@向东博客 专注WEB应用 构架之美 --- 构架之美，在于尽态极妍 | 应用之美，在于药到病除
+地址：http://www.jackxiang.com/post/7637/
+版权所有。转载时必须以链接形式注明作者和原始出处及本声明！
