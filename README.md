@@ -373,3 +373,8 @@ https://gentoo.org
 
 ## 手把手教你做树莓派语音识别，文本变语音
 http://www.jackxiang.com/post/7637/  
+
+## 实现用PS4 Dual Shock蓝牙连接树莓派3 控制小车  
+http://tieba.baidu.com/p/5514213749  
+
+
