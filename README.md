@@ -377,4 +377,6 @@ http://www.jackxiang.com/post/7637/
 ## 实现用PS4 Dual Shock蓝牙连接树莓派3 控制小车  
 http://tieba.baidu.com/p/5514213749  
 
+## RaspberryPi_3_Starter_Kit  
+https://github.com/userdw/RaspberryPi_3_Starter_Kit  
 
