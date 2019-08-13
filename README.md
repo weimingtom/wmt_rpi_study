@@ -380,3 +380,6 @@ http://tieba.baidu.com/p/5514213749
 ## RaspberryPi_3_Starter_Kit  
 https://github.com/userdw/RaspberryPi_3_Starter_Kit  
 
+## Gentoo  
+https://wiki.gentoo.org/wiki/Raspberry_Pi  
+
