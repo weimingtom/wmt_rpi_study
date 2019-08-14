@@ -387,3 +387,4 @@ https://wiki.gentoo.org/wiki/Raspberry_Pi
 https://github.com/rockchip-linux/buildroot/tree/rockchip/2018.02-rc3/package/wiringpi  
 http://wiki.friendlyarm.com/wiki/index.php/Buildroot_for_RK3399  
 https://buildroot.org/downloads/buildroot-2018.02-rc3.tar.gz  
+https://github.com/WiringPi/WiringPi/tree/96344ff7125182989f98d3be8d111952a8f74e15  
