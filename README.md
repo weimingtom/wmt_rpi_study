@@ -383,3 +383,7 @@ https://github.com/userdw/RaspberryPi_3_Starter_Kit
 ## Gentoo  
 https://wiki.gentoo.org/wiki/Raspberry_Pi  
 
+## buildroot wiringpi    
+https://github.com/rockchip-linux/buildroot/tree/rockchip/2018.02-rc3/package/wiringpi  
+http://wiki.friendlyarm.com/wiki/index.php/Buildroot_for_RK3399  
+https://buildroot.org/downloads/buildroot-2018.02-rc3.tar.gz  
