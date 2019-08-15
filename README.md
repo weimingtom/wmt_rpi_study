@@ -399,5 +399,6 @@ https://jumpnowtek.com/rpi/Raspberry-Pi-Systems-with-Buildroot.html
 http://sources.buildroot.net/bcm2835/  
 bcm2835  
 c-periphery  
+https://github.com/vsergeev/c-periphery  
 lua  
 wiringpi  
