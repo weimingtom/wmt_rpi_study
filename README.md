@@ -5,6 +5,12 @@ My Raspberry Pi study
 (baidupan) 2018-04-18-raspbian-stretch.zip    
 (baidupan) 2018-04-18-raspbian-stretch-lite.zip  
 
+## rpi0 buildroot  
+(baidupan) buildroot_rpi0_2018  
+(baidupan) hello_v3.tar.gz  
+(baidupan) buildroot-2018.02-rc3.tar.gz  
+(baidupan) dl_2018.tar.gz  
+
 ## rpi zero serial login  
 (1) 接好右上第3，第4，第5针  
 GND<->GND  
