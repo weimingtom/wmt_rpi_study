@@ -391,3 +391,13 @@ https://github.com/WiringPi/WiringPi/tree/96344ff7125182989f98d3be8d111952a8f74e
 
 ## buildroot 下载和make nconfig  
 https://blog.csdn.net/liuqun69/article/details/82455823  
+
+## Building Raspberry Pi Systems with Buildroot  
+https://jumpnowtek.com/rpi/Raspberry-Pi-Systems-with-Buildroot.html  
+
+## buildroot package for rpi  
+http://sources.buildroot.net/bcm2835/  
+bcm2835  
+c-periphery  
+lua  
+wiringpi  
