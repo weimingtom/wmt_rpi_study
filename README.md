@@ -421,3 +421,6 @@ https://www.yoctoproject.org
 https://github.com/raspberrypi/hats  
 https://hackaday.io/project/20482-designing-a-raspberry-pi-hat  
 
+## pisugar-case-pihat-cap  
+https://github.com/PiSugar/pisugar-case-pihat-cap  
+
