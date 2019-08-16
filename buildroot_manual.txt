@@ -1,0 +1,16 @@
+我把buildroot官方文档看完了，总结关键点如下。从这份文档看，buildroot跟openwrt是不同目标的两个项目，
+如果你希望编译出包管理器和目标机可运行的gcc，这些这些特性buildroot都已经删掉了，只能用openwrt做，
+不严格说buildroot相当于更轻量级的openwrt。
+https://buildroot.org/downloads/manual/manual.html
+(1) 不生成目标机编译器，没有二进制包文件，不打包静态库文件，尽可能轻量级（分成target和staging目录）
+(2) 允许使用外部编译器
+(3) 第三章开发者指引中，添加新包到Buildroot有各种类型包的介绍，不过通常只关心generic-package
+(4) 下面比较重要的几个插件包类型（一般在package/Config.in中添加）：
+(5) generic-package：重要看里面的Makefile模板，搜索generic-package tutorial，里面还有设置设备节点（LIBFOO_DEVICES）、
+文件权限（LIBFOO_PERMISSIONS），文件用户（LIBFOO_USERS）的模板
+(6) virtual-package：执行命令修改或删除target目录的文件
+(7) kernel-module：内核模块，例如一些wifi驱动
+(8) linux-kernel-tools：Linux内核工具，用于编译$(LINUX_DIR)/tools下的工具程序（例如cpupower，gpio下的lsgpio之类）。
+不同于一般包，它在package/linux-tools/Config.in中添加（合并到同一个文件夹中）
+(9) linux-ext：Linux内核扩展，例如fbtft，不同于一般包，它在linux/Config.ext.in中添加
+
