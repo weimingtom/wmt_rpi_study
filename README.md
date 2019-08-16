@@ -410,3 +410,10 @@ c-periphery
 https://github.com/vsergeev/c-periphery  
 lua  
 wiringpi  
+
+## OpenEmbedded  
+http://www.openembedded.org/wiki/Main_Page  
+
+## Yocto Project  
+https://www.yoctoproject.org  
+
