@@ -417,3 +417,7 @@ http://www.openembedded.org/wiki/Main_Page
 ## Yocto Project  
 https://www.yoctoproject.org  
 
+## hat  
+https://github.com/raspberrypi/hats  
+https://hackaday.io/project/20482-designing-a-raspberry-pi-hat  
+
