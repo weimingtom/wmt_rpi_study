@@ -7,6 +7,7 @@ My Raspberry Pi study
 
 ## rpi0 buildroot  
 * https://github.com/weimingtom/buildroot_rpi0_hello  
+* https://github.com/weimingtom/wmt_rpi_study/blob/master/buildroot_manual.txt  
 * (baidupan) buildroot_rpi0_2018  
 * (baidupan) hello_v3.tar.gz  
 * (baidupan) buildroot-2018.02-rc3.tar.gz  
