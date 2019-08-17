@@ -431,3 +431,6 @@ https://www.howtoing.com/how-to-create-your-own-linux-distribution-with-yocto-on
 
 ## u-boot download    
 https://ftp.denx.de/pub/u-boot/  
+
+## openwrt bcm2710    
+http://downloads.openwrt.org/snapshots/targets/brcm2708/bcm2710/  
