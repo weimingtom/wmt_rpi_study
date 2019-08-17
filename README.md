@@ -273,6 +273,8 @@ https://blog.csdn.net/ztguang/article/details/51016325
 ## book, GNU Linux Rapid Embedded Programming  
 * GNU/Linux嵌入式快速编程  
 * https://github.com/giometti/gnu_linux_rapid_embedded_programming  
+* https://github.com/giometti/gnu_linux_rapid_embedded_programming/blob/master/chapter_05/openwrt-helloworld/Makefile  
+* yocto  
 
 ## yoctoproject  
 * https://www.yoctoproject.org  
