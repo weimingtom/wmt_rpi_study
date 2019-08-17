@@ -424,3 +424,5 @@ https://hackaday.io/project/20482-designing-a-raspberry-pi-hat
 ## pisugar-case-pihat-cap  
 https://github.com/PiSugar/pisugar-case-pihat-cap  
 
+## 如何在Ubuntu上使用Yocto创建自己的Linux发行版  
+https://www.howtoing.com/how-to-create-your-own-linux-distribution-with-yocto-on-ubuntu/  
