@@ -434,3 +434,7 @@ https://ftp.denx.de/pub/u-boot/
 
 ## openwrt bcm2710    
 http://downloads.openwrt.org/snapshots/targets/brcm2708/bcm2710/  
+
+## pigpio  
+https://github.com/joan2937/pigpio  
+https://github.com/raspberrypi/gpioexpander/blob/master/gpioexpand/package/pigpio/pigpio.mk  
