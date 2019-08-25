@@ -1,0 +1,13 @@
+今天研究NanoPi Duo2的buildroot，我发现一个很惊人的事实——
+buildroot的NanoPi Neo目标生成的sdcard.img居然可以成功在NanoPi Duo2上运行。
+其实我在看到生成镜像里面没有包含duo2的驱动文件的时候，我的心已经凉了一半，
+以为这个镜像肯定跑不起来，结果居然成功了。这个buildroot生成的最小操作系统，
+启动速度达到7秒到8秒，如果不计算u-boot的2秒等待时间，可以在5秒左右启动成功，
+这比起树莓派zero的buildroot最小操作系统的6秒到7秒启动速度相比，快1秒左右。
+注意，事实上官方neo和duo2使用相同的32位H3芯片（neo2用的是64位H5芯片），
+但售价方面duo2要贵一些，另外由于neo2用的是64位处理器，
+所以我在尝试buildroot编译时不使用neo2，而是用neo。
+我用的buildroot版本是buildroot-2019.02.3，
+开发环境是ubuntu 14.04 32位。编译时间约2小时，
+最终生成镜像大小为44MB，配置命令行：
+make nanopi_neo_defconfig
