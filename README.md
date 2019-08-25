@@ -443,3 +443,6 @@ https://github.com/raspberrypi/gpioexpander/blob/master/gpioexpand/package/pigpi
 https://github.com/OpenNuvoton/NUC970_Linux_Applications/tree/master/minigui  
 https://github.com/weimingtom/wmt_arm9_study  
 
+## Buildroot for the i.MX6 sabre sd platform in a few commands  
+https://community.nxp.com/docs/DOC-99218  
+
