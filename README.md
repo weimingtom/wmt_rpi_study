@@ -438,3 +438,8 @@ http://downloads.openwrt.org/snapshots/targets/brcm2708/bcm2710/
 ## pigpio  
 https://github.com/joan2937/pigpio  
 https://github.com/raspberrypi/gpioexpander/blob/master/gpioexpand/package/pigpio/pigpio.mk  
+
+## minigui  
+https://github.com/OpenNuvoton/NUC970_Linux_Applications/tree/master/minigui  
+https://github.com/weimingtom/wmt_arm9_study  
+
