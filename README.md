@@ -446,3 +446,12 @@ https://github.com/weimingtom/wmt_arm9_study
 ## Buildroot for the i.MX6 sabre sd platform in a few commands  
 https://community.nxp.com/docs/DOC-99218  
 
+## 树莓派 wiringPi 用户手册  
+http://blog.lxx1.com/树莓派-wiringpi-用户手册  
+
+## 树莓派学习笔记——wiringPi GPIO使用详解  
+https://blog.csdn.net/xukai871105/article/details/17881433  
+
+## 树莓派-wiringPi-优先级&中断&线程  
+http://nicekwell.net/blog/20171123/shu-mei-pai-wiringpi-you-xian-ji-and-zhong-duan-and-xian-cheng.html  
+
