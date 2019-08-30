@@ -455,3 +455,14 @@ https://blog.csdn.net/xukai871105/article/details/17881433
 ## 树莓派-wiringPi-优先级&中断&线程  
 http://nicekwell.net/blog/20171123/shu-mei-pai-wiringpi-you-xian-ji-and-zhong-duan-and-xian-cheng.html  
 
+## Rockchip  
+http://opensource.rock-chips.com/wiki_Main_Page  
+
+## linaro  
+https://releases.linaro.org/components/toolchain/binaries/5.4-2017.01/arm-linux-gnueabihf/  
+
+## sxx1314  
+https://blog.sxx1314.com    
+
+## gcc for windows  
+https://sysprogs.com  
