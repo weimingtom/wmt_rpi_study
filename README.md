@@ -466,3 +466,9 @@ https://blog.sxx1314.com
 
 ## gcc for windows  
 https://sysprogs.com  
+
+## bpi-m2z    
+https://github.com/BPI-SINOVOIP/BPI-M2Z-bsp  
+https://github.com/BPI-SINOVOIP/BPI-files  
+https://github.com/BPI-SINOVOIP/BPI_WiFi_Firmware  
+https://github.com/linux-sunxi  
