@@ -472,3 +472,8 @@ https://github.com/BPI-SINOVOIP/BPI-M2Z-bsp
 https://github.com/BPI-SINOVOIP/BPI-files  
 https://github.com/BPI-SINOVOIP/BPI_WiFi_Firmware  
 https://github.com/linux-sunxi  
+
+## 荔枝派Zero指南  
+https://www.kancloud.cn/lichee/lpi0  
+https://www.kancloud.cn/lichee/lpi0/421924  
+
