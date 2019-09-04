@@ -472,6 +472,7 @@ https://github.com/BPI-SINOVOIP/BPI-M2Z-bsp
 https://github.com/BPI-SINOVOIP/BPI-files  
 https://github.com/BPI-SINOVOIP/BPI_WiFi_Firmware  
 https://github.com/linux-sunxi  
+(baidupan) search buildroot-2019.02.3_bpi-m2z.tar.gz  
 
 ## 荔枝派Zero指南  
 http://zero.lichee.pro  
