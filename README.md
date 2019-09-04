@@ -474,6 +474,7 @@ https://github.com/BPI-SINOVOIP/BPI_WiFi_Firmware
 https://github.com/linux-sunxi  
 
 ## 荔枝派Zero指南  
+https://licheezero.readthedocs.io/  
 https://www.kancloud.cn/lichee/lpi0  
 https://www.kancloud.cn/lichee/lpi0/421924  
 
