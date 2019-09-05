@@ -481,3 +481,6 @@ https://licheezero.readthedocs.io/
 https://www.kancloud.cn/lichee/lpi0  
 https://www.kancloud.cn/lichee/lpi0/421924  
 
+## stm32 buildroot  
+https://elinux.org/STM32  
+https://github.com/fdu/STM32F429I-disco_Buildroot  
