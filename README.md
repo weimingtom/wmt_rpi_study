@@ -485,3 +485,7 @@ https://www.kancloud.cn/lichee/lpi0/421924
 ## stm32 buildroot  
 https://elinux.org/STM32  
 https://github.com/fdu/STM32F429I-disco_Buildroot  
+
+## 荔枝派Licheepi nano裸机移植ZLG_GUI和3D旋转立方体  
+https://www.cnblogs.com/zhinianzhizhan/p/10051013.html  
+https://whycan.cn/t_1457.html  
