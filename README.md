@@ -489,3 +489,6 @@ https://github.com/fdu/STM32F429I-disco_Buildroot
 ## 荔枝派Licheepi nano裸机移植ZLG_GUI和3D旋转立方体  
 https://www.cnblogs.com/zhinianzhizhan/p/10051013.html  
 https://whycan.cn/t_1457.html  
+
+## arm 芯片型号 汇总  
+https://blog.csdn.net/dunwin/article/details/84253928  
