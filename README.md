@@ -492,3 +492,7 @@ https://whycan.cn/t_1457.html
 
 ## arm 芯片型号 汇总  
 https://blog.csdn.net/dunwin/article/details/84253928  
+
+## RK3308 buildroot package  
+http://wiki.t-firefly.com/zh_CN/ROC-RK3308-CC/buildroot_development.html  
+https://gitlab.com/TeeFirefly/rk3308-linux/tree/firefly/buildroot/package/rockchip  
