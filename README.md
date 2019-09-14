@@ -501,3 +501,6 @@ https://gitlab.com/TeeFirefly/rk3308-linux/tree/firefly/buildroot/package/rockch
 ## rpi framebuffer  
 https://github.com/txurtxil/ST7735R-LCD  
 https://github.com/vinodstanur/raspberry-pi-frame-buffer-mapping-to-160x128-ST7735R-LCD  
+
+## ili9341  
+https://github.com/sammyizimmy/ili9341  
