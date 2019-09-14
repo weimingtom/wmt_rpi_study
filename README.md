@@ -504,3 +504,6 @@ https://github.com/vinodstanur/raspberry-pi-frame-buffer-mapping-to-160x128-ST77
 
 ## A Raspberry pi framebuffer driver for the ili9341 lcd driver    
 https://github.com/sammyizimmy/ili9341  
+
+## 树莓派 spi 液晶屏支持  
+http://wiki.jikexueyuan.com/project/raspberry-pi/spi.html  
