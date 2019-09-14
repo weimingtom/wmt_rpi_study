@@ -158,6 +158,7 @@ https://github.com/fundoong/Raspberry-pi-Device-Driver
 https://github.com/Apress/mastering-raspberry-pi  
 https://github.com/ve3wwg/raspberry_pi  
 (baidupan) Mastering_the_Raspberry_Pi.pdf  
+书，book  
 
 ## screen pixel count  
 https://tieba.baidu.com/p/1248658772  
