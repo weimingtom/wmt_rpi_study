@@ -496,3 +496,7 @@ https://blog.csdn.net/dunwin/article/details/84253928
 ## RK3308 buildroot package  
 http://wiki.t-firefly.com/zh_CN/ROC-RK3308-CC/buildroot_development.html  
 https://gitlab.com/TeeFirefly/rk3308-linux/tree/firefly/buildroot/package/rockchip  
+
+## rpi framebuffer  
+https://github.com/txurtxil/ST7735R-LCD  
+https://github.com/vinodstanur/raspberry-pi-frame-buffer-mapping-to-160x128-ST7735R-LCD  
