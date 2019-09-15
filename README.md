@@ -508,3 +508,6 @@ https://github.com/sammyizimmy/ili9341
 
 ## 树莓派 spi 液晶屏支持  
 http://wiki.jikexueyuan.com/project/raspberry-pi/spi.html  
+
+## rk3288-cc上编写一个hello world  
+https://www.cnblogs.com/ch122633/p/10959419.html  
