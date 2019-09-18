@@ -1,0 +1,699 @@
+http://www.elecfans.com/d/1046670.html
+
+如何使用1.3“Retina级IPS LCD HAT制作一个微小的RetroPie Zero
+39度创意研究所 • 2019-09-09 17:09 • 156次阅读 0
+
+第1步：准备
+
+如何使用1.3“Retina级IPS LCD HAT制作一个微小的RetroPie Zero
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RPi Zero
+
+Raspberry Pi Zero和Raspberry Pi Zero W都可以.WiFi版本可以使后续设置更容易，但相比之下它可能会不断耗尽更多功率，即缩短电池寿命。
+
+LCD HAT
+
+Waveshare为RPi Zero发布了2个LCD HAT，两个都有一个小方形LCD。新版本有一个240 x 240 1.3“IPS LCD。它是261 PPI并且在苹果定义的视网膜显示范围内（218 - 458 PPI）。该分辨率能够模仿CRT电视时代的许多复古游戏机，例如NES的分辨率为256 x 240，我们可以从左右两个过扫描区域切下8个像素，使其变为240 x 240。
+
+Pin Header
+
+紧密适合Waveshare 1.3 “LCD HAT，它需要一个8毫米高的2 x 20针头。但我不能买一个8毫米高的，所以我将修改一个12毫米高的针头。
+
+LiPo电池
+
+RPi和LCD HAT之间的内部尺寸可以容纳5 mm x 23 mm x 45 mm电池，任何带有保护电路的LiPo电池都应该可以。
+
+微小的LiPo电池电路板
+
+我手边有一块10毫米x 10毫米的小型5 V LiPo充电板。它足够小，适用于这个项目，但限制是只能为电池充电50 mA电流。 400 mAh电池需要超过8小时才能充满电。
+
+电源开关
+
+微型电源开关。
+
+腕带
+
+由于这个游戏手柄很小，很容易从手上滑落，建议在玩游戏时戴上手腕带。
+
+螺丝
+
+3D pr内置外壳需要四个14 mm M2.5平头螺钉进行组装。
+
+参考：
+
+https://www.waveshare.com/wiki/1.3inch_LCD_HAT
+
+https://www.waveshare.com/product/modules/oleds-lc 。..
+
+第2步：3D打印案例
+
+
+
+
+
+
+
+
+
+3D打印您可以在Thingiverse中找到的案例模型：
+
+https：//www.thingiverse .com/thing：3328994
+
+为了便于说明，我用不同的颜色打印每个部分：
+
+Layer123.stl - 炭黑
+
+Layer4 .stl - 半透明黄色
+
+Layer5.stl - 半透明橙色
+
+Layer678.stl - 半透明红色
+
+ButtonHead.stl - 半透明红色，半透明蓝色和半透明绿色
+
+CrossButtonHead.stl - Gundam Red
+
+第3步：直接电池电量
+
+
+
+
+
+这款微型游戏手柄没有足够的空间安装在升压电路板上，是否有可能锂离子电池直接为RPi Zero（W）供电而无需升级？
+
+有一些非官方的讨论是否要求RPi Zero（W）满5 V电源。
+
+根据RPi Zero简化原理图，只有2个引脚直接连接到5 V，它是USB插头和PAM2306稳压器。所有其他部件均由稳压3.3 V和1.8 V供电。
+
+假设我们在使用电池供电时不使用任何外部USB设备，关键因素是稳压器。
+
+根据PAM2306当输入电压降至3.5 V时，3.3 V输出仍然保持90％以上的效率。
+
+RPi零平均值约为100 - 200 mA，LiPo约为mAh，放电率为在降至3.5 V以下之前，它仍然可以利用90％的LiPo容量。
+
+参考：
+
+https://www.raspberrypi.org/forums/viewtopic。 PHP吨。..
+
+的https：//www.raspberrypi.org/documentation/hardware 。..
+
+https://www.mouser.hk/datasheet/2/115/PAM2306-3367 。..
+
+HTTPS：//electronics.stackexchange.com/questions/32 。..
+
+https://www.quora.com/Is-它-可能观看的最CH 。..
+
+注意：
+
+根据我的简单测试，当WiFi开启时，电池可以持续超过90分钟。如果使用RPi Zero，它应该会持续更长时间。
+
+步骤4：引脚标题补丁
+
+
+
+
+
+
+
+
+
+
+
+Waveshare LCD HAT采用薄型母针头，可以使产品更加纤薄。但是我们需要在RPi Zero上使用相应的低调公插针头来制作它。网针头应为8毫米高，但我在网上找不到。所以从12毫米的公针头上修补它。
+
+需要一些患者修剪相同长度的40个针脚。
+
+步骤5：焊接工作
+
+
+
+
+
+使用RPi Zero焊接所有引脚头。
+
+以下是电源电路的连接摘要：
+
+Waveshare Pin 2 -》 Charge Board +vin， Power Switch Pin 1
+
+Waveshare Pin 6 -》 Charge Board -vin
+
+Charge Board -vout -》 LiPo -ve
+
+LiPo +ve -》 Power Switch Pin 2
+
+Charge Board +vout -》 Power Switch Pin 3
+
+当电源开关关闭引脚1和2时，它是电池供电模式
+
+当电源开关关闭引脚2和3时，它是电池充电模式/电源关闭
+
+注意：
+
+Waveshare LCD HAT引脚头位于底部，因此引脚排列颠倒了
+
+步骤6：装配层4
+
+
+
+将第4层放在LCD HAT下
+
+在第4层安装电源开关
+
+放入充电板和电池内部第4层框架
+
+第7步：装配层5
+
+
+
+将第5层放在第4层
+
+步骤8：插入RPi零
+
+
+
+步骤9：装配层678
+
+
+
+将第678层放在RPi Zero上。
+
+St ep 10：将螺丝拧入螺丝孔
+
+
+
+步骤11：将按钮头放在LCD HAT上
+
+
+
+
+
+步骤12：装配层123
+
+
+
+将第123层放在LCD HAT上。
+
+步骤13：拧紧螺丝
+
+
+
+步骤14：装配十字按钮头
+
+
+
+将十字按钮头放入十字按钮。
+
+步骤15：下载RetroPie图像
+
+
+
+下载RetroPie图像在这里：
+
+https://retropie.org.uk/download/
+
+选择“Raspberry Pi 0/1”选项下载Raspberry Pi Zero的图像
+
+步骤16：下载源
+
+面包板RetroPie所需的另外两个源代码：
+
+mk_arcade_joystick_rpi：
+
+https：//github.com/recalbox/mk_arcade_joystick_rpi
+
+rpi-fbcp：
+
+https://github.com/tasanakorn/rpi-fbcp
+
+单击“克隆”或者从两个源网页下载“按钮然后再下载ZIP”。
+
+S.第17步：准备ROM文件
+
+对于非许可证免费游戏，我认为你应该只使用你拥有原始游戏的ROM。
+
+或者你可能会发现一些许可免费游戏：
+
+http://pdroms.de/files
+
+http://www.doperoms.com
+
+第18步：Flash RetroPie图像
+
+将RetroPie图像闪存到micro SD卡的步骤与闪烁Raspbian图像相同。如果您不熟悉闪烁步骤，请按照Raspberry.org提供的步骤进行操作：
+
+Linux
+
+Mac OS
+
+Windows
+
+PS记得用RetroPie图像替换图像文件名。
+
+步骤19：复制文件
+
+将“mk_arcade_joystick_rpi-master.zip”，“rpi-fbcp-master.zip”复制到刚创建的RetroPie micro SD。
+
+步骤20：配置Micro SD
+
+我们需要在RetroPie启动后进一步配置，在此之前，我们需要启用DWC2 USB控制器才能在计算机和网络之间建立网络连接。 Pi Zero。
+
+在micro SD中编辑config.txt，在尾部追加跟随行：
+
+dtoverlay=dwc2
+
+在micro SD中编辑codlin.txt，插入“ modules-load = dwc2，g_ether“在”rootwait“关键字之后。结果应该是这样的：
+
+dwc_otg.lpm_enable=0 console=serial0，115200 console=tty1 root=PARTUUID=14a75fe9-02 rootfstype=ext4 elevator=deadline fsck.repair=yes rootwait modules-load=dwc2，g_ether quiet loglevel=3 consoleblank=0 plymouth.enable=0 quiet init=/usr/lib/raspi-config/init_resize.sh
+
+在micro SD中创建一个名为“ssh”的空白文件，以启用openssh服务器，例如：在我的Mac上：
+
+touch /Volumes/boot/ssh
+
+参考：
+
+https：//www.instructables.com/id/Connect-to-a-Rasp 。..
+
+步骤21：USB连接
+
+
+
+
+
+将micro SD插入Pi Zero
+
+将电源开关设为电池充电模式
+
+将Pi Zero 2nd USB插孔（标有“USB”）连接到电脑。
+
+等一下，您应该在计算机中找到新的网络适配器。输入以下命令连接到Pi Zero：
+
+ssh pi@retropie.local
+
+注意：
+
+默认密码为“raspberry”，您应该尽快通过“passwd”命令进行更改
+
+步骤22：配置LCD
+
+追加到“/etc/modules”
+
+spi-bcm2835
+
+flexfb
+
+fbtft_device
+
+创建“/etc/modprobe.d/fbtft.conf“
+
+options flexfb setaddrwin=0 width=240 height=240 init=-1，0x11，-2，120，-1，0x36，0x70，-1，0x3A，0x05，-1，0xB2，0x0C，0x0C，0x00，0x33，0x33，-1，0xB7，0x35，-1，0xBB，0x1A，-1，0xC0，0x2C，-1，0xC2，0x01，-1，0xC3，0x0B，-1，0xC4，0x20，-1，0xC6，0x0F，-1，0xD0，0xA4，0xA1，-1，0x21，-1，0xE0，0x00，0x19，0x1E，0x0A，0x09，0x15，0x3D，0x44，0x51，0x12，0x03，0x00，0x3F，0x3F，-1，0xE1，0x00，0x18，0x1E，0x0A，0x09，0x25，0x3F，0x43，0x52，0x33，0x03，0x00，0x3F，0x3F，-1，0x29，-3
+
+options fbtft_device name=flexfb gpios=reset:27，dc:25，cs:8，led:24 speed=125000000 bgr=1 fps=60 custom=1 height=240 width=240
+
+步骤23：启用Fbcp
+
+提取源文件：
+
+unzip /boot/rpi-fbcp-master.zip
+
+编译并安装：
+
+cd rpi-fbcp-master/
+
+mkdir build
+
+cd build
+
+cmake 。.
+
+make
+
+sudo install fbcp /usr/local/bin/fbcp
+
+cd 。./。.
+
+创建新文件“/etc/init.d/fbcp“：
+
+#！ /bin/sh
+
+### BEGIN INIT INFO
+
+# Provides： fbcp
+
+# Required-Start： kmod
+
+# Required-Stop： kmod
+
+# Default-Start： 2 3 4 5
+
+# Default-Stop： 0 1 6
+
+# Short-Description：
+
+# Description：
+
+### END INIT INFO
+
+case ”$1“ in
+
+start）
+
+/usr/local/bin/fbcp &
+
+;;
+
+stop|restart|reload|force-reload）
+
+killall fbcp
+
+exit 0
+
+;;
+
+*）
+
+log_success_msg ”Usage： $0 start“
+
+exit 1
+
+esac
+
+制作文件可执行文件：
+
+sudo chmod +x /etc/init.d/fbcp
+
+在启动时将其设置为init：
+
+sudo update-rc.d fbcp defaults
+
+在尾部的“/boot/config.txt”中添加以下行：
+
+disable_overscan=1
+
+hdmi_force_hotplug=1
+
+hdmi_group=2
+
+hdmi_mode=87
+
+hdmi_cvt=240 240 60 1 0 0 0
+
+dtparam=spi=on
+
+参考：https：//github.com/tasanakorn/rpi-fbcp
+
+第24步：配置操纵杆
+
+提取源文件：
+
+unzip /boot/mk_arcade_joystick_rpi-master.zip
+
+编辑按钮定义：
+
+cd mk_arcade_joystick_rpi-master/
+
+vi mk_arcade_joystick_rpi.c
+
+找到“static const int mk_arcade_gpio_maps ［］”行并更新为HAT按钮映射：
+
+static const int mk_arcade_gpio_maps［］ = {6，19，5，26，13，21，16，20，0，0，0，0};
+
+编译并安装模块：
+
+sudo mkdir /usr/src/mk_arcade_joystick_rpi-0.1.5/
+
+sudo cp -a * /usr/src/mk_arcade_joystick_rpi-0.1.5/
+
+export MKVERSION=0.1.5
+
+sudo -E dkms build -m mk_arcade_joystick_rpi -v 0.1.5
+
+sudo -E dkms install -m mk_arcade_joystick_rpi -v 0.1.5
+
+测试按钮：
+
+sudo modprobe mk_arcade_joystick_rpi map=1
+
+jstest /dev/input/js0
+
+追加到“/etc/modules”：
+
+mk_arcade_joystick_rpi
+
+创建“/etc/mod probe.d/joystick.conf“：
+
+options mk_arcade_joystick_rpi map=1
+
+参考：https：//github.com/recalbox/mk_arcade_joystick_rp 。..
+
+步骤25：复制ROM文件
+
+将ROM文件从“/boot”文件夹复制到“〜/RetroPie/roms/$ CONSOLE”文件夹
+
+参考：
+
+https://github.com/retropie/retropie-setup/wiki/Tr 。..
+
+步骤26：Raspi-config
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+运行：
+
+sudo raspi-config
+
+WiFi：2网络选项 - 》 N2 Wi-fi - 》填写您的WiFi详细信息
+
+不等待网络：3启动选项 - 》 B2等待网络启动 - 》否 - 》确定
+
+时区：4个本地化选项 - 》 I2更改时区 - 》选择您的时区
+
+禁用串口：5接口选项 - 》 P6串口 - 》否 - 》否 - 》确定
+
+参考：
+
+https://www.raspberrypi.org/documentation/configur 。..
+
+第27步：RetroPie设置
+
+
+
+
+
+
+
+
+
+
+
+
+
+运行：
+
+sudo ~/RetroPie-Setup/retropie_setup.sh
+
+微调1.3“LCD：C配置/工具 - 》 805 configedit - 》 1 - 》 0 - 》 2渲染分辨率 - 》 O视频输出分辨率 - 》确定 - 》取消 - 》取消 - 》取消
+
+更改主题以适应小屏幕（需要连接WiFi） ：812个esthemes - 》 14 Pixel-tft - 》 OK - 》 1个碳 - 》 2个卸载
+
+参考：
+
+https://github.com/retropie/retropie-setup/wiki/th.。.
+
+第28步：原生分辨率
+
+LCD HAT在十字按钮上有3个按钮和1个额外的按钮，它可以映射到只有4个按钮的复古游戏控制台（选择，开始，A和B）。此类游戏机的最高分辨率应为NES，分辨率为256 x 240。如果只是简单地裁剪水平过扫描区域，它就可以适合240 x 240 LCD显示器。
+
+如果你只像我一样玩NES游戏，你可以应用以下配置来获得原始分辨率显示。
+
+追加“/opt/retropie/configs/nes/retroarch.cfg”：
+
+video_fullscreen_x = “0”
+
+video_fullscreen_y = “0”
+
+video_scale_integer = true
+
+Append”/opt/retropie/configs/all/retroarch-core-options。 cfg“：
+
+quicknes_use_overscan_h = “disabled”
+
+步骤29：控制器配置
+
+
+
+EmulationStation的Joypad设置：
+
+vi /opt/retropie/configs/all/emulationstation/es_input.cfg
+
+输入文字：
+
+/opt/retropie/supplementary/emulationstation/scripts/inputconfiguration.sh
+
+Retroarch的Joypad设置：
+
+vi /opt/retropie/configs/all/retroarch/autoconfig/GPIO\ Controller\ 1.cfg
+
+输入文字：
+
+input_device = “GPIO Controller 1”
+
+input_driver = “udev”
+
+input_start_btn = “11”
+
+input_exit_emulator_btn = “11”
+
+input_down_axis = “+1”
+
+input_right_axis = “+0”
+
+input_state_slot_increase_axis = “+0”
+
+input_select_btn = “10”
+
+input_left_axis = “-0”
+
+input_state_slot_decrease_axis = “-0”
+
+input_up_axis = “-1”
+
+input_a_btn = “0”
+
+input_b_btn = “1”
+
+input_reset_btn = “1”
+
+input_enable_hotkey_btn = “10”
+
+步骤30：加快启动时间
+
+运行：sudo systemctl disable asplashscreen
+
+sudo systemctl disable dphys-swapfile
+
+sudo systemctl disable hciuart
+
+sudo systemctl disable keyboard-setup
+
+sudo systemctl disable nmbd
+
+sudo systemctl disable raspi-config
+
+sudo systemctl disable smbd
+
+sudo systemctl disable nfs-config
+
+步骤31：可选调整
+
+微调“/boot/cmdline.txt“：
+
+禁用USB以太网小工具
+
+无徽标
+
+fastboot
+
+安静
+
+dwc_otg.lpm_enable=0 console=tty1 root=PARTUUID=14a75fe9-02 rootfstype=ext4 elevator=deadline fsck.repair=yes rootwait loglevel=3 consoleblank=0 plymouth.enable=0 logo.nologo fastboot quiet #dtoverlay=dwc2
+
+步骤32：引导RetroPie
+
+关闭RetroPie：
+
+sudo halt
+
+拔下USB电缆
+
+将电源开关设置为电池供电模式
+
+等待ar启动后半分钟
+
+按照屏幕说明配置游戏按钮
+
+选择您上传的控制台和游戏
+
+步骤33：仿真站电源选项
+
+按开始按钮（按下十字按钮）进入仿真站配置屏幕。
+
+UI设置 - 》屏幕保护设置 - 》 SCREENSAVER AFTER - 》 1分钟
+
+其他设置 - 》省电模式 - 》即时
+
+步骤34：绑手腕带
+
+
+
+
+
+步骤35：享受！
+
+
+
+
+
+
+
+现在是时候展示你做了什么并玩它。
+
+步骤36：画廊：Color Mix＆amp;匹配
+
+
+
+
+
+
+
+
+
+
+
+声明：本文由入驻电子说专栏的作者撰写或者网上转载，观点仅代表作者本人，不代表电子发烧友网立场。如有侵权或者其他问题，请联系举报。侵权投诉
