@@ -511,3 +511,6 @@ http://wiki.jikexueyuan.com/project/raspberry-pi/spi.html
 
 ## rk3288-cc上编写一个hello world  
 https://www.cnblogs.com/ch122633/p/10959419.html  
+
+## 用crosstool-ng构建交叉工具编译链  
+https://blog.csdn.net/cztqwan/article/details/79428341  
