@@ -514,3 +514,6 @@ https://www.cnblogs.com/ch122633/p/10959419.html
 
 ## 用crosstool-ng构建交叉工具编译链  
 https://blog.csdn.net/cztqwan/article/details/79428341  
+
+## 用crosstool工具建立交叉工具链过程记录  
+https://blog.csdn.net/lhw88117/article/details/7183896  
