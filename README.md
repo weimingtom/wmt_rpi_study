@@ -517,3 +517,9 @@ https://blog.csdn.net/cztqwan/article/details/79428341
 
 ## 用crosstool工具建立交叉工具链过程记录  
 https://blog.csdn.net/lhw88117/article/details/7183896  
+
+## 《Linux From Scratch》第一部分：介绍 第一章：介绍-1.1 如何构建LFS系统  
+https://yq.aliyun.com/articles/235931?spm=a2c4e.11153940.0.0.3d054edcLXxH7F  
+
+## 重走LFS之路：（六） 工具链编译-3  
+https://yq.aliyun.com/articles/87208  
