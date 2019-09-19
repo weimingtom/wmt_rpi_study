@@ -523,3 +523,6 @@ https://yq.aliyun.com/articles/235931?spm=a2c4e.11153940.0.0.3d054edcLXxH7F
 
 ## 重走LFS之路：（六） 工具链编译-3  
 https://yq.aliyun.com/articles/87208  
+
+## Beyond Linux From Scratch  
+http://www.linuxfromscratch.org/blfs/view/8.1/index.html  
