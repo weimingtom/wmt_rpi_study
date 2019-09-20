@@ -1,0 +1,16 @@
+https://github.com/notro/fbtft/wiki/fbtft_device
+
+sudo modprobe fbtft_device name=adafruit18 gpios=reset:23,dc:24 speed=16000000
+sudo modprobe fbtft_device name=adafruit18_green gpios=reset:27,dc:25,cs:8,led:24 speed=40000000 bgr=1 fps=60 custom=1 height=128 width=128 rotate=180
+
+sudo modprobe fbtft_device name=adafruit18 gpios=reset:27,dc:25,cs:8,led:24 speed=40000000 bgr=1 fps=60 custom=1 height=128 width=128 rotate=180
+
+
+GND               (right top 3)
+VCC               (left top 1)
+SCLK P11/SCLK     (Left Top 12)
+MOSI P10/MOSI     (left top 10)
+RST	P27	          (left top 7)
+DC	P25	          (right top 11) 
+CS	P8/CE0        (right top 12)
+BL	P24	          (right top 9)
