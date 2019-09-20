@@ -1,0 +1,6 @@
+2019/09/21  
+如果想研究树莓派系统自带（Linux自带）的fbtft，可以参考微雪的这篇文章：
+http://www.waveshare.net/wiki/1.44inch_LCD_HAT
+中景园的1.44寸128x128屏幕是兼容这个HAT扩展的，只是麻烦在接线，需要自己用杜邦线对上。而且实际上配置fbtft并不是如这篇写的那么麻烦，只要把参数写在modprobe fbtft_device后面即可，参考这篇：
+https://blog.csdn.net/DevinTT/article/details/72814539
+微雪那篇更适用于研究启动时自动运行，实际上没必要，因为目前不需要做自动运行功能，只要能从控制台启动即可
