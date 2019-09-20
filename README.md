@@ -526,3 +526,6 @@ https://yq.aliyun.com/articles/87208
 
 ## Beyond Linux From Scratch  
 http://www.linuxfromscratch.org/blfs/view/8.1/index.html  
+
+## 2 Mic Hat rpi driver  
+https://github.com/respeaker/seeed-voicecard  
