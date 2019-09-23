@@ -532,3 +532,6 @@ https://github.com/respeaker/seeed-voicecard
 
 ## Qemu搭建ARM vexpress开发环境(一)  
 https://www.cnblogs.com/microxiami/p/9746979.html  
+
+## RaspberryPi-FreeRTOS  
+https://github.com/jameswalmsley/RaspberryPi-FreeRTOS  
