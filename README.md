@@ -529,3 +529,6 @@ http://www.linuxfromscratch.org/blfs/view/8.1/index.html
 
 ## 2 Mic Hat rpi driver  
 https://github.com/respeaker/seeed-voicecard  
+
+## Qemu搭建ARM vexpress开发环境(一)  
+https://www.cnblogs.com/microxiami/p/9746979.html  
