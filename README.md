@@ -535,3 +535,6 @@ https://www.cnblogs.com/microxiami/p/9746979.html
 
 ## RaspberryPi-FreeRTOS  
 https://github.com/jameswalmsley/RaspberryPi-FreeRTOS  
+
+## 使用Buildroot为I.MX6制作根文件系统  
+https://blog.csdn.net/wangwenxue1989/article/details/90085798  
