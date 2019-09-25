@@ -538,3 +538,8 @@ https://github.com/jameswalmsley/RaspberryPi-FreeRTOS
 
 ## 使用Buildroot为I.MX6制作根文件系统  
 https://blog.csdn.net/wangwenxue1989/article/details/90085798  
+
+## Raspberry Pi Assembly and Architecture Books  
+http://www.microdigitaled.com/ARM/RPi_ASM_books.htm  
+http://nicerland.com/raspberry-pi/  
+http://nicerland.com/eduFiles/RaspPi/RaspberryPiAsmProgramming_v1.pdf  
