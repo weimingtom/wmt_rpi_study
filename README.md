@@ -543,3 +543,6 @@ https://blog.csdn.net/wangwenxue1989/article/details/90085798
 http://www.microdigitaled.com/ARM/RPi_ASM_books.htm  
 http://nicerland.com/raspberry-pi/  
 http://nicerland.com/eduFiles/RaspPi/RaspberryPiAsmProgramming_v1.pdf  
+
+## FC / NES ROM  
+(baidupan) FC任天堂红白机中文模拟器 500经典游戏大集合.rar  
