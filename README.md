@@ -13,6 +13,10 @@ My Raspberry Pi study
 * (baidupan) buildroot-2018.02-rc3.tar.gz  
 * (baidupan) dl_2018.tar.gz  
 
+## raspi-gpio  
+https://github.com/RPi-Distro  
+https://github.com/RPi-Distro/raspi-gpio  
+
 ## rpi zero serial login  
 (1) 接好右上第3，第4，第5针  
 GND<->GND  
