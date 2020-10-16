@@ -562,3 +562,8 @@ https://github.com/robe-zhang/project_mys_y6ulx
 
 ## SecureCRT  
 
+## 用树莓派改造 NumWorks 计算器    
+https://shumeipai.nxez.com/2019/12/27/raspberrypi-numworks.html  
+https://www.numworks.com/simulator/  
+https://github.com/zardam/epsilon/tree/rpi  
+
