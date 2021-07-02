@@ -567,3 +567,6 @@ https://shumeipai.nxez.com/2019/12/27/raspberrypi-numworks.html
 https://www.numworks.com/simulator/  
 https://github.com/zardam/epsilon/tree/rpi  
 
+## bootloader  
+https://github.com/marin9/RPi_Bootloader  
+https://github.com/marwansalama94/Raspberrypi3-bootloader  
