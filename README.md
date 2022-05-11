@@ -581,8 +581,8 @@ $ nano jupyter_notebook_config.py
 ```
 -> change c.NotebookApp.allow_remote_access = False to 
 c.NotebookApp.allow_remote_access = True  
--> c.NotebookApp.ip = '192.168.1.188'  
--> c.NotebookApp.local_hostnames = ['localhost', '192.168.1.188']  
+-> c.NotebookApp.ip = '192.168.1.188'  # <== or 0.0.0.0
+-> c.NotebookApp.local_hostnames = ['localhost', '192.168.1.188']    # <== or 0.0.0.0
 ```
 $ jupyter notebook --debug  
 $ jupyter notebook &  
