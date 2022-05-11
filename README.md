@@ -577,15 +577,15 @@ $ nano .profile
 PATH加入/home/pi/.local/bin或者$HOME/.local/bin  
 $ jupyter notebook --generate-config  
 $ cd /home/pi/.jupyter  
-$ nano jupyter_notebook_config.py   
+$ nano jupyter_notebook_config.py (if ip is fixed to 192.168.1.188)    
 ```
 -> change c.NotebookApp.allow_remote_access = False to 
 c.NotebookApp.allow_remote_access = True  
--> c.NotebookApp.ip = '192.168.1.188'  # <== or 0.0.0.0
--> c.NotebookApp.local_hostnames = ['localhost', '192.168.1.188']    # <== or 0.0.0.0
+-> c.NotebookApp.ip = '192.168.1.188'  # <== (or not suggest 0.0.0.0)  
+-> c.NotebookApp.local_hostnames = ['localhost', '192.168.1.188']    # <== (or not suggest 0.0.0.0) 
 ```
 ```
--> c.NotebookApp.shutdown_no_activity_timeout = 0 # <== 修改此处，一般去掉注释即可  
+-> c.NotebookApp.shutdown_no_activity_timeout = 0 # <== mod here, uncomment   
 ->  c.NotebookApp.quit_button = False  
 ->  c.NotebookApp.shutdown_no_activity_timeout = 0  
 ```
