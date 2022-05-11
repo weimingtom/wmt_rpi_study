@@ -671,3 +671,15 @@ $ npm install -g pm2
 pi@raspberrypi:~/vue/server $ npm run production  
 > server@0.0.0 production /home/pi/vue/server  
 > pm2 start ./bin/www  
+
+## redis  
+$ sudo apt-get install redis-server  
+$ redis-cli  
+127.0.0.1:6379>  
+$ sudo service redis restart   
+pi@raspberrypi:~ $ sudo service --status-all  
+
+## mongodb  
+$ sudo apt-get install mongodb-server  
+pi@raspberrypi:~ $ mongo  
+pi@raspberrypi:~ $ service --status-all  
