@@ -598,3 +598,28 @@ $  jupyter notebook list
 $ ps aux | grep jupyter  
 $ kill -KILL xxxx  
 https://blog.csdn.net/Dolphinsz/article/details/83623514  
+
+# mysql timezone, not need to change global var time_zone, only to change rpi's timezone through rpi-config  
+$ sudo mysql -uroot -p  
+show global variables like '%time%'
+(see time_zone (set to default value 'SYSTEM') and system_time_zone (set to 'CST') )  
+$ sudo raspi-config  
+(...change localization timezone here)  
+$ date   
+Fri 04 Jun 2021 12:22:50 PM HDT  
+->changed to this  
+Sat 05 Jun 2021 05:27:00 AM CST  
+需要重启mariadb数据库服务  
+sudo service mysql restart  
+https://linux.cn/article-7970-1.html?pr  
+pi@raspberrypi:~ $ timedatectl  
+               Local time: Sat 2021-06-05 05:36:28 CST  
+           Universal time: Fri 2021-06-04 21:36:28 UTC  
+                 RTC time: n/a  
+                Time zone: Asia/Shanghai (CST, +0800)  
+System clock synchronized: yes  
+              NTP service: active  
+          RTC in local TZ: no  
+$ cat /etc/timezone  
+Asia/Shanghai  
+
