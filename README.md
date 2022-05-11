@@ -599,7 +599,7 @@ $ ps aux | grep jupyter
 $ kill -KILL xxxx  
 https://blog.csdn.net/Dolphinsz/article/details/83623514  
 
-# mysql timezone, not need to change global var time_zone, only to change rpi's timezone through raspi-config  
+## mysql timezone, not need to change global var time_zone, only to change rpi's timezone through raspi-config  
 $ sudo mysql -uroot -p  
 show global variables like '%time%'
 (see time_zone (set to default value 'SYSTEM') and system_time_zone (set to 'CST') )  
@@ -624,3 +624,50 @@ System clock synchronized: yes
 $ cat /etc/timezone  
 Asia/Shanghai  
 
+## phpmyadmin 5.1.0  
+$ sudo apt-get install php-xml php-mbstring  
+$ sudo service apache2 restart  
+
+## tomcat-users  
+```
+<tomcat-users xmlns="http://tomcat.apache.org/xml"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://tomcat.apache.org/xml tomcat-users.xsd"
+              version="1.0">
+<!--
+  NOTE:  By default, no user is included in the "manager-gui" role required
+  to operate the "/manager/html" web application.  If you wish to use this app,
+  you must define such a user - the username and password are arbitrary. It is
+  strongly recommended that you do NOT use one of the users in the commented out
+  section below since they are intended for use with the examples web
+  application.
+-->
+<!--
+  NOTE:  The sample user and role entries below are intended for use with the
+  examples web application. They are wrapped in a comment and thus are ignored
+  when reading this file. If you wish to configure these users for use with the
+  examples web application, do not forget to remove the <!.. ..> that surrounds
+  them. You will also need to set the passwords to something appropriate.
+-->
+<!--
+  <role rolename="tomcat"/>
+  <role rolename="role1"/>
+  <user username="tomcat" password="<must-be-changed>" roles="tomcat"/>
+  <user username="both" password="<must-be-changed>" roles="tomcat,role1"/>
+  <user username="role1" password="<must-be-changed>" roles="role1"/>
+-->
+  <role rolename="admin-gui"/>
+  <user username="tomcat" password="mypass" roles="admin-gui,manager-gui,manager-jmx,
+manager-script,manager-status"/>
+</tomcat-users>
+```
+
+## nodejs pm2  
+$ tar xzf node-v14.16.1-linux-armv7l.tar.gz  
+$ nano .profile  
+PATH="$HOME/jdk1.8.0_291/bin:$HOME/node-v14.16.1-linux-armv7l/bin:$PATH"  
+$ source .profile  
+$ npm install -g pm2  
+pi@raspberrypi:~/vue/server $ npm run production  
+> server@0.0.0 production /home/pi/vue/server  
+> pm2 start ./bin/www  
