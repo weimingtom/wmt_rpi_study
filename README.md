@@ -570,3 +570,32 @@ https://github.com/zardam/epsilon/tree/rpi
 ## bootloader  
 https://github.com/marin9/RPi_Bootloader  
 https://github.com/marwansalama94/Raspberrypi3-bootloader  
+
+## jupyter  
+$ pip3 install jupyter  
+$ nano .profile  
+PATH加入/home/pi/.local/bin或者$HOME/.local/bin  
+$ jupyter notebook --generate-config  
+$ cd /home/pi/.jupyter  
+$ nano jupyter_notebook_config.py   
+```
+-> change c.NotebookApp.allow_remote_access = False to 
+c.NotebookApp.allow_remote_access = True  
+-> c.NotebookApp.ip = '192.168.1.188'  
+-> c.NotebookApp.local_hostnames = ['localhost', '192.168.1.188']  
+```
+$ jupyter notebook --debug  
+$ jupyter notebook &  
+$ exit  
+http://192.168.1.188:8888  
+$  jupyter notebook list  
+$ ps aux | grep jupyter  
+$ kill -KILL xxxx  
+https://blog.csdn.net/Dolphinsz/article/details/83623514  
+```
+-> c.NotebookApp.shutdown_no_activity_timeout = 0 # <== 修改此处，一般去掉注释即可  
+->  c.NotebookApp.quit_button = False  
+->  c.NotebookApp.shutdown_no_activity_timeout = 0  
+```
+补充一下上次说的jupyter，如果想把IP定为任意，可以在配置文件中填0.0.0.0，这样可以避免绑定不了有堡垒机的机器的IP（例如那些云服务）。另外jupyter除了可以运行python3，还可以直接调用终端shell，所以如果想暴露出去远程，记得要加个密码保护一下  
+
