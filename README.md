@@ -683,3 +683,7 @@ pi@raspberrypi:~ $ sudo service --status-all
 $ sudo apt-get install mongodb-server  
 pi@raspberrypi:~ $ mongo  
 pi@raspberrypi:~ $ service --status-all  
+
+## picore, tinycorelinux, not good ???    
+http://distro.ibiblio.org/tinycorelinux/13.x/armv6/releases/RPi/  
+http://distro.ibiblio.org/tinycorelinux/ports.html  
