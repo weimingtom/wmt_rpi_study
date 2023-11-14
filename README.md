@@ -699,3 +699,6 @@ $ meson –prefix=/usr/local _build
 $ ninja -C _build  
 $ cd work_krkrsdl2/data_web  
 $ /home/pi/work_krkrsdl2/krkrsdl2/_build/krkrsdl2  
+
+## nestopia not good, use fceux instead  
+$ sudo apt install nestopia fceux  
