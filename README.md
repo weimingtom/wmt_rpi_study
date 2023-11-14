@@ -688,7 +688,7 @@ pi@raspberrypi:~ $ service --status-all
 http://distro.ibiblio.org/tinycorelinux/13.x/armv6/releases/RPi/  
 http://distro.ibiblio.org/tinycorelinux/ports.html  
 
-## krkrsdl2  
+## krkrsdl2 for rpi4    
 search work_krkrsdl2, krkrsdl2_github_20220221_full.tar.gz, data_web.zip, data.zip  
 $ tar xzf krkrsdl2_github_20220221_full.tar.gz  
 $ unzip data_web.zip  
