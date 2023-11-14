@@ -702,3 +702,12 @@ $ /home/pi/work_krkrsdl2/krkrsdl2/_build/krkrsdl2
 
 ## nestopia not good, use fceux instead  
 $ sudo apt install nestopia fceux  
+
+## RPI3 FreeBSD  
+* https://wiki.freebsd.org/arm/Raspberry%20Pi  
+* https://download.freebsd.org/ftp/releases/arm64/aarch64/ISO-IMAGES/12.4/  
+* https://download.freebsd.org/ftp/releases/arm64/aarch64/ISO-IMAGES/12.4/FreeBSD-12.4-RELEASE-arm64-aarch64-RPI3.img.xz  
+* user, password:  
+1. freebsd, freebsd  
+2. root, root  
+* 我发现树莓派3b的一个新用途——用来跑FreeBSD 12 aarch6版。和Linux的区别是，引导程序是u-boot，进入登录命令行之后居然可以看到鼠标，可以用鼠标选择文本；编译器cc是指向clang。除此之外就不太会用了
