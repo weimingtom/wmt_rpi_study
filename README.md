@@ -687,3 +687,14 @@ pi@raspberrypi:~ $ service --status-all
 ## picore, tinycorelinux, not good ???    
 http://distro.ibiblio.org/tinycorelinux/13.x/armv6/releases/RPi/  
 http://distro.ibiblio.org/tinycorelinux/ports.html  
+
+## krkrsdl2  
+$ tar xzf krkrsdl2_github_20220221_full.tar.gz  
+$ unzip data_web.zip  
+$ unzip data.zip  
+$ sudo apt install ninja-build meson libsdl2-dev  
+$ cd krkrsdl2  
+$ meson –prefix=/usr/local _build  
+$ ninja -C _build  
+$ cd work_krkrsdl2/data_web  
+$ /home/pi/work_krkrsdl2/krkrsdl2/_build/krkrsdl2  
