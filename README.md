@@ -6,7 +6,8 @@ My Raspberry Pi study
 * If you want to cross compile elf for raspberry pi zero (like Qt 4), you can  
 use the old toolchain, like this, C and C++ (for Ubuntu 1404 64bit version):  
 * /home/wmt/work_qt/tools-master/arm-bcm2708/arm-linux-gnueabihf/bin/arm-linux-gnueabihf-gcc -march=armv6  
-* /home/wmt/work_qt/tools-master/arm-bcm2708/arm-linux-gnueabihf/bin/arm-linux-gnueabihf-g++ -std=gnu++98 -march=armv6   
+* /home/wmt/work_qt/tools-master/arm-bcm2708/arm-linux-gnueabihf/bin/arm-linux-gnueabihf-g++ -std=gnu++98 -march=armv6
+* for rom: 2018-04-18-raspbian-stretch-lite.zip  
 
 ## rpi3b test   
 (baidupan) 2018-04-18-raspbian-stretch.zip    
