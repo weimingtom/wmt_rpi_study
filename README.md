@@ -719,3 +719,9 @@ $ sudo apt install nestopia fceux
 1. freebsd, freebsd  
 2. root, root  
 * 我发现树莓派3b的一个新用途——用来跑FreeBSD 12 aarch6版。和Linux的区别是，引导程序是u-boot，进入登录命令行之后居然可以看到鼠标，可以用鼠标选择文本；编译器cc是指向clang。除此之外就不太会用了
+
+## PWM Audio  
+* https://facelesstech.wordpress.com/2022/02/11/gbc-retropie-aio-rev-c/  
+* https://github.com/facelesstech/gbc_retropie_aio_revC  
+* dtoverlay=pwm-2chan,pin=18,func=2,pin2=13,func2=4
+* https://learn.adafruit.com/retro-gaming-with-raspberry-pi/adding-controls-software  
