@@ -725,3 +725,12 @@ $ sudo apt install nestopia fceux
 * https://github.com/facelesstech/gbc_retropie_aio_revC  
 * dtoverlay=pwm-2chan,pin=18,func=2,pin2=13,func2=4
 * https://learn.adafruit.com/retro-gaming-with-raspberry-pi/adding-controls-software  
+
+## RPI3 OpenWrt23, boot very fast, openwrt 23.05.0      
+* https://openwrt.org/toh/raspberry_pi_foundation/raspberry_pi  
+* boot very fast, about 10 seconds  
+* https://downloads.openwrt.org/releases/23.05.0/targets/bcm27xx/bcm2710/openwrt-23.05.0-bcm27xx-bcm2710-rpi-3-ext4-factory.img.gz  
+* (TODO) How to build  
+* (TODO) How to cross compile application  
+* It seems to run on rpi0  
+* https://downloads.openwrt.org/releases/23.05.0/targets/bcm27xx/bcm2708/openwrt-23.05.0-bcm27xx-bcm2708-rpi-ext4-factory.img.gz  
