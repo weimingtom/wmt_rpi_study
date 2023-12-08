@@ -734,3 +734,8 @@ $ sudo apt install nestopia fceux
 * (TODO) How to cross compile application  
 * It seems to run on rpi0  
 * https://downloads.openwrt.org/releases/23.05.0/targets/bcm27xx/bcm2708/openwrt-23.05.0-bcm27xx-bcm2708-rpi-ext4-factory.img.gz  
+
+## 树莓派HomeAssistant学习笔记  
+* https://ha.jiluxinqing.com/#/  
+* https://ha.jiluxinqing.com/#/raspberrypi?id=homeassistant  
+* https://github.com/shaonianzhentan/ha-docs  
