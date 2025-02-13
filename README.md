@@ -739,3 +739,16 @@ $ sudo apt install nestopia fceux
 * https://ha.jiluxinqing.com/#/  
 * https://ha.jiluxinqing.com/#/raspberrypi?id=homeassistant  
 * https://github.com/shaonianzhentan/ha-docs  
+
+## 树莓派4b编译安装PPSSPP 1.18.1成功（32位）  
+```
+树莓派4b编译安装PPSSPP 1.18.1成功（32位），
+我试过可以在x11和纯CLI命令行环境下都能运行
+（命令行下SDL2鼠标可以显示但不能点击）。
+编译方法：
+（1）刷2023-05-03-raspios
+（2）sudo apt install cmake libsdl2-dev
+（3）复制ffmpeg的linux armv7目录到aarch6（原aarch可以改名）
+（4）./b.sh --rpi但注意这种方法会全部重新编译，所以必要时需要cd build; make
+（5）大部分效果类似于PC版，包括部分闪退游戏也可能需要用Debug类型编译才能不闪退
+```
